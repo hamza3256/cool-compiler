@@ -1,0 +1,47 @@
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+See the file README for a full copyright notice.
+Loaded: /home/raj/cool/distro/bin/.orig/.Linux/../../../lib/trap.handler
+The following symbols are undefined:
+Parent_protObj
+heap_start
+C1_protObj
+A_init
+Grandparent_protObj
+Base_init
+Int_protObj
+C_protObj
+Bool_dispTab
+Base_protObj
+Main.main
+Grandparent_init
+Bool_init
+String_protObj
+B_protObj
+P_protObj
+IO_init
+Int_init
+Int_dispTab
+P_init
+String_init
+Object_init
+Parent_init
+A_protObj
+IO_protObj
+Child_init
+Main_protObj
+String_dispTab
+Child_protObj
+C2_init
+C2_protObj
+Main_init
+Bool_protObj
+C_init
+Blah_init
+C1_init
+Blah_protObj
+Object_protObj
+B_init
+
+[0x0040129c]	0x3c010000  lui $1, 0 [heap_start]          ; 2521: la	$gp heap_start			# set $gp to the start of the heap

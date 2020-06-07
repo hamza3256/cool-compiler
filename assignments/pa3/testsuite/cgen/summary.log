@@ -1,0 +1,76 @@
+Testing cgen
+Testsuite in /home/raj/cool/distro/testsuite/cgen
+Results in /home/raj/cool/distro/assignments/pa3/testsuite/cgen
+Results directory exists and will be overwritten.
+Building cgen using /home/raj/cool/distro/bin/testscripts/cgen/buildtest
+Testing cgen using /home/raj/cool/distro/bin/testscripts/cgen/runtest
+FAIL: testsuite/cgen/abort.cl
+FAIL: testsuite/cgen/assignment-val.cl
+FAIL: testsuite/cgen/basicequality.cl
+FAIL: testsuite/cgen/basic-init.cl
+FAIL: testsuite/cgen/bigexample.cl
+FAIL: testsuite/cgen/bigexpr.cl
+FAIL: testsuite/cgen/book_list.cl
+FAIL: testsuite/cgen/bool.cl
+FAIL: testsuite/cgen/calls.cl
+FAIL: testsuite/cgen/case-none.cl
+FAIL: testsuite/cgen/case-order.cl
+FAIL: testsuite/cgen/casevoid.cl
+FAIL: testsuite/cgen/c.cl
+FAIL: testsuite/cgen/cells.cl
+FAIL: testsuite/cgen/copy-self-dispatch.cl
+FAIL: testsuite/cgen/copy-self-init.cl
+FAIL: testsuite/cgen/dispatch-override-dynamic.cl
+FAIL: testsuite/cgen/dispatch-override-static.cl
+FAIL: testsuite/cgen/dispatch-void-dynamic.cl
+FAIL: testsuite/cgen/dispatchvoidlet.cl
+FAIL: testsuite/cgen/dispatch-void-static.cl
+FAIL: testsuite/cgen/eval-order-args.cl
+FAIL: testsuite/cgen/eval-order-arith.cl
+FAIL: testsuite/cgen/eval-order-self.cl
+FAIL: testsuite/cgen/exp.cl
+FAIL: testsuite/cgen/fact.cl
+FAIL: testsuite/cgen/fibo.cl
+FAIL: testsuite/cgen/hairyscary.cl
+FAIL: testsuite/cgen/init-default.cl
+FAIL: testsuite/cgen/init-order-self.cl
+FAIL: testsuite/cgen/init-order-super.cl
+FAIL: testsuite/cgen/interaction-attrinit-method.cl
+FAIL: testsuite/cgen/lam.cl
+FAIL: testsuite/cgen/lam-gc.cl
+FAIL: testsuite/cgen/letinit.cl
+FAIL: testsuite/cgen/let-nested.cl
+FAIL: testsuite/cgen/many_objects_on_heap.cl
+FAIL: testsuite/cgen/mod-param.cl
+FAIL: testsuite/cgen/multiple-dispatch.cl
+FAIL: testsuite/cgen/multiple-static-dispatch.cl
+FAIL: testsuite/cgen/nested-arith.cl
+FAIL: testsuite/cgen/newbasic.cl
+FAIL: testsuite/cgen/new-self-dispatch.cl
+FAIL: testsuite/cgen/new-self-init.cl
+FAIL: testsuite/cgen/new-st.cl
+FAIL: testsuite/cgen/not.cl
+FAIL: testsuite/cgen/objectequality.cl
+FAIL: testsuite/cgen/override-basic.cl
+FAIL: testsuite/cgen/override.cl
+FAIL: testsuite/cgen/primes.cl
+FAIL: testsuite/cgen/recclass.cl
+FAIL: testsuite/cgen/scoping.cl
+FAIL: testsuite/cgen/selftypeattribute.cl
+FAIL: testsuite/cgen/sequence.cl
+FAIL: testsuite/cgen/shadow-attr-case.cl
+FAIL: testsuite/cgen/shadow-attr-formal.cl
+FAIL: testsuite/cgen/shadow-attr-let.cl
+FAIL: testsuite/cgen/shadow-case-let.cl
+FAIL: testsuite/cgen/shadow-formal-case.cl
+FAIL: testsuite/cgen/shadow-formal-let.cl
+FAIL: testsuite/cgen/shadow-let-case.cl
+FAIL: testsuite/cgen/shadow-let-let.cl
+FAIL: testsuite/cgen/simple-gc.cl
+FAIL: testsuite/cgen/sort_list.cl
+FAIL: testsuite/cgen/string-methods.cl
+FAIL: testsuite/cgen/typename.cl
+FAIL: testsuite/cgen/while-val.cl
+Passed 0 of 67 tests for cgen
+See /home/raj/cool/distro/assignments/pa3/testsuite/cgen/test.log
+DONE

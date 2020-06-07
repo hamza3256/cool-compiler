@@ -1,0 +1,8 @@
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+See the file README for a full copyright notice.
+Loaded: /home/raj/cool/distro/bin/.orig/.Linux/../../../lib/trap.handler
+/home/raj/cool/distro/testsuite/cgen/dispatchvoidlet.cl:1: Dispatch to void.
+Stats -- #instructions : 137
+         #reads : 18  #writes 19  #branches 24  #other 76

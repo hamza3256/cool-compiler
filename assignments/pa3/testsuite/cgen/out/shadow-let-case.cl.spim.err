@@ -1,0 +1,4 @@
+spim: (parser) syntax error on line 214 of file /home/raj/cool/distro/assignments/pa3/testsuite/cgen/out/shadow-let-case.cl.out
+	  .word	-1
+	  ^
+Instruction references undefined symbol at 0x0040129c

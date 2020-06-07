@@ -1,0 +1,13 @@
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+See the file README for a full copyright notice.
+Loaded: /home/raj/cool/distro/bin/.orig/.Linux/../../../lib/trap.handler
+1
+2
+3
+4
+5
+COOL program successfully executed
+Stats -- #instructions : 460
+         #reads : 106  #writes 73  #branches 77  #other 204

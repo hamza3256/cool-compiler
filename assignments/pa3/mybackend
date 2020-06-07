@@ -1,0 +1,1 @@
+lexer $@ | parser $@ | semant $@ | java -cp .:/home/raj/cool/distro/lib/antlr-4.6-complete.jar: Backend $@
