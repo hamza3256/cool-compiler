@@ -1,7 +1,10 @@
 import ast.*;
+import java.util.AbstractMap;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.io.PrintStream;
+import java.util.ArrayList;
 
 
 /**
@@ -16,6 +19,10 @@ class ClassTable {
      * do anything useful; you will need to edit it to make if do what
      * you want.
      */
+
+    private List<ClassNode> classList;
+
+
     private void installBasicClasses() {
         Symbol filename
                 = StringTable.stringtable.addString("<basic class>");
@@ -186,14 +193,88 @@ class ClassTable {
                 TreeConstants.Str,
                 new NoExpressionNode(0)));
 
-	/* Do somethind with Object_class, IO_class, Int_class,
+	/* Do something with Object_class, IO_class, Int_class,
            Bool_class, and Str_class here */
+
+
+
+	Semant.symtable.enterScope();
+
+
+        Semant.symtable.addId(Object_class.getName(),   new AbstractMap.SimpleImmutableEntry<>(TreeConstants.No_class,  Object_class));
+        Semant.symtable.addId(TreeConstants.cool_abort, new AbstractMap.SimpleImmutableEntry<>(TreeConstants.Object_,   Object_class));
+        Semant.symtable.addId(TreeConstants.type_name,  new AbstractMap.SimpleImmutableEntry<>(TreeConstants.Str,       Object_class));
+        Semant.symtable.addId(TreeConstants.copy,       new AbstractMap.SimpleImmutableEntry<>(TreeConstants.SELF_TYPE, Object_class));
+
+        Semant.symtable.enterScope();
+
+        Semant.symtable.addId(IO_class.getName(),   new AbstractMap.SimpleImmutableEntry<>(TreeConstants.Object_, IO_class));
+        Semant.symtable.addId(Int_class.getName(),  new AbstractMap.SimpleImmutableEntry<>(TreeConstants.Object_, Int_class));
+        Semant.symtable.addId(Bool_class.getName(), new AbstractMap.SimpleImmutableEntry<>(TreeConstants.Object_, Bool_class));
+        Semant.symtable.addId(Str_class.getName(),  new AbstractMap.SimpleImmutableEntry<>(TreeConstants.Object_, Str_class));
+
+        Semant.symtable.addId(TreeConstants.out_string, new AbstractMap.SimpleImmutableEntry<>(TreeConstants.SELF_TYPE, IO_class));
+        Semant.symtable.addId(TreeConstants.out_int,    new AbstractMap.SimpleImmutableEntry<>(TreeConstants.SELF_TYPE, IO_class));
+        Semant.symtable.addId(TreeConstants.in_string,  new AbstractMap.SimpleImmutableEntry<>(TreeConstants.Str,       IO_class));
+        Semant.symtable.addId(TreeConstants.in_int,     new AbstractMap.SimpleImmutableEntry<>(TreeConstants.Int,       IO_class));
+
+        Semant.symtable.addId(TreeConstants.length, new AbstractMap.SimpleImmutableEntry<>(TreeConstants.Int, Str_class));
+        Semant.symtable.addId(TreeConstants.concat, new AbstractMap.SimpleImmutableEntry<>(TreeConstants.Str, Str_class));
+        Semant.symtable.addId(TreeConstants.substr, new AbstractMap.SimpleImmutableEntry<>(TreeConstants.Str, Str_class));
 
     }
 
     public ClassTable(List<ClassNode> cls) {
-    	/* fill this in */
+    	this.classList = cls;
+    	installBasicClasses();
+    	Semant.symtable.enterScope();
+
+    	for (ClassNode c : classList) {
+    	    Semant.symtable.addId(c.getName(), c.getParent());
+        }
+
+        checkInheritErr();
+
+        Semant.symtable.exitScope();
+
+    }
+
+    public void checkInheritErr() {
+        for (ClassNode c : classList) {
+            Symbol inCls  = c.getName();
+            Symbol prCls = c.getParent();
+
+            if (inCls.getName().equals("Object")      ||
+                inCls.getName().equals("IO")          ||
+                inCls.getName().equals("Int")         ||
+                inCls.getName().equals("String")      ||
+                inCls.getName().equals("SELF_TYPE")) {
+
+                displayInheritErr(c, "Redefinition of basic class " + inCls.getName() + ".");
+
+            } else if ( Semant.symtable.lookup(prCls) == inCls                          ||
+                        ((Symbol)Semant.symtable.lookup(inCls)).getName().equals("SELF_TYPE") ||
+                        prCls.getName().equals("Int")                                     ||
+                        prCls.getName().equals("Bool")                                    ||
+                        prCls.getName().equals("String")                                  ||
+                        prCls.getName().equals("Main")) {
+
+                displayInheritErr(c,
+                        "Class " + inCls.getName() + " cannot inherit class " + prCls.getName() + ".");
+
+            } else if (Semant.symtable.lookup(prCls) == null) {
+
+                displayInheritErr(c,
+                        "Class " + inCls.getName() + " inherits from an undefined class " + prCls.getName() + ".");
+
+            }
+
+        }
+    }
+
+    private void displayInheritErr(ClassNode illegalClass, String msg) {
+        PrintStream ps = Utilities.semantError(illegalClass);
+        ps.append(msg);
+        ps.println();
     }
 }
-
-    

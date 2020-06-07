@@ -1,0 +1,69 @@
+
+_program
+
+  _class
+    Main
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/baddispatch.test"
+    (
+
+    _method
+      main
+      Object
+
+      _int
+        0
+      : Int
+    )
+
+  _class
+    Animal
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/baddispatch.test"
+    (
+    )
+
+  _class
+    Cow
+    Animal
+    "/home/mhamza/cool/distro/testsuite/semant/baddispatch.test"
+    (
+
+    _method
+      moo
+      String
+
+      _string
+        "moo"
+      : String
+    )
+
+  _class
+    Blerg
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/baddispatch.test"
+    (
+
+    _method
+      foo
+      Object
+
+      _let
+        cow
+        Animal
+
+        _new
+          Cow
+        : Cow
+
+        _dispatch
+
+          _object
+            cow
+          : Animal
+          moo
+          (
+          )
+        : String
+      : String
+    )

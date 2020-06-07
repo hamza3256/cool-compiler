@@ -1,0 +1,66 @@
+--->Object
+Install class: ast.ClassNode@1175e2db
+--->IO
+Install class: ast.ClassNode@76ccd017
+--->Int
+Install class: ast.ClassNode@26f0a63f
+--->Bool
+Install class: ast.ClassNode@53bd815b
+--->String
+Install class: ast.ClassNode@7637f22
+
+_program
+
+  _class
+    Main
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/basic.test"
+    (
+
+    _method
+      main
+      Object
+
+      _block
+
+        _dispatch
+
+          _int
+            5
+          : Int
+          copy
+          (
+          )
+        : _no_type
+
+        _dispatch
+
+          _string
+            "test"
+          : String
+          copy
+          (
+          )
+        : _no_type
+
+        _dispatch
+
+          _bool
+            1
+          : Bool
+          copy
+          (
+          )
+        : _no_type
+
+        _dispatch
+
+          _string
+            "test"
+          : String
+          length
+          (
+          )
+        : _no_type
+      : _no_type
+    )

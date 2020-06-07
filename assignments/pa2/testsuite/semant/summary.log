@@ -1,0 +1,82 @@
+Testing semant
+Testsuite in /home/mhamza/cool/distro/testsuite/semant
+Results in /home/mhamza/cool/distro/assignments/pa2/testsuite/semant
+Results directory exists and will be overwritten.
+Building semant using /home/mhamza/cool/distro/bin/testscripts/semant/buildtest
+Testing semant using /home/mhamza/cool/distro/bin/testscripts/semant/runtest
+PASS: testsuite/semant/anattributenamedself.test
+PASS: testsuite/semant/assignment.test
+PASS: testsuite/semant/assignnoconform.test
+PASS: testsuite/semant/attrbadinit.test
+PASS: testsuite/semant/attroverride.test
+PASS: testsuite/semant/badargs1.test
+PASS: testsuite/semant/badarith.test
+PASS: testsuite/semant/baddispatch.test
+PASS: testsuite/semant/badequalitytest2.test
+PASS: testsuite/semant/badequalitytest.test
+PASS: testsuite/semant/badmethodcallsitself.test
+PASS: testsuite/semant/badredefineint.test
+PASS: testsuite/semant/badstaticdispatch.test
+PASS: testsuite/semant/badwhilebody.test
+PASS: testsuite/semant/badwhilecond.test
+PASS: testsuite/semant/basicclassestree.test
+PASS: testsuite/semant/basic.test
+PASS: testsuite/semant/caseidenticalbranch.test
+PASS: testsuite/semant/cells.cl.test
+PASS: testsuite/semant/classes.test
+PASS: testsuite/semant/compare.test
+PASS: testsuite/semant/comparisons.test
+PASS: testsuite/semant/cycleinmethods.test
+PASS: testsuite/semant/dispatch.test
+PASS: testsuite/semant/dupformals.test
+PASS: testsuite/semant/expressionblock.test
+PASS: testsuite/semant/forwardinherits.test
+PASS: testsuite/semant/hairyscary.cl.test
+PASS: testsuite/semant/if.test
+PASS: testsuite/semant/inheritsbool.test
+PASS: testsuite/semant/inheritsObject.test
+PASS: testsuite/semant/inheritsselftype.test
+PASS: testsuite/semant/inheritsstring.test
+PASS: testsuite/semant/initwithself.test
+PASS: testsuite/semant/io.test
+PASS: testsuite/semant/isvoid.test
+PASS: testsuite/semant/letbadinit.test
+PASS: testsuite/semant/letinit.test
+PASS: testsuite/semant/letnoinit.test
+PASS: testsuite/semant/letself.test
+PASS: testsuite/semant/letselftype.test
+PASS: testsuite/semant/letshadows.test
+PASS: testsuite/semant/list.cl.test
+PASS: testsuite/semant/lubtest.test
+PASS: testsuite/semant/methodcallsitself.test
+PASS: testsuite/semant/methodnameclash.test
+PASS: testsuite/semant/missingclass.test
+PASS: testsuite/semant/neg.test
+PASS: testsuite/semant/newselftype.test
+PASS: testsuite/semant/nomain.test
+PASS: testsuite/semant/objectdispatchabort.test
+PASS: testsuite/semant/outofscope.test
+PASS: testsuite/semant/overriderenamearg.test
+PASS: testsuite/semant/overridingmethod2.test
+PASS: testsuite/semant/overridingmethod3.test
+PASS: testsuite/semant/overridingmethod4.test
+PASS: testsuite/semant/overridingmethod.test
+PASS: testsuite/semant/redefinedclass.test
+PASS: testsuite/semant/redefinedobject.test
+PASS: testsuite/semant/returntypenoexist.test
+PASS: testsuite/semant/scopes.test
+PASS: testsuite/semant/self-assignment.test
+PASS: testsuite/semant/selfinformalparameter.test
+PASS: testsuite/semant/selftypebadreturn.test
+PASS: testsuite/semant/selftypeparameterposition.test
+PASS: testsuite/semant/selftyperedeclared.test
+PASS: testsuite/semant/signaturechange.test
+PASS: testsuite/semant/simplearith.test
+PASS: testsuite/semant/simplecase.test
+PASS: testsuite/semant/staticdispatch.test
+PASS: testsuite/semant/stringtest.test
+PASS: testsuite/semant/subtypemethodreturn.test
+PASS: testsuite/semant/trickyatdispatch2.test
+PASS: testsuite/semant/trickyatdispatch.test
+Passed 74 of 74 tests for semant
+DONE

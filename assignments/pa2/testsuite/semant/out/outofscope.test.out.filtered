@@ -1,0 +1,32 @@
+
+_program
+
+  _class
+    Main
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/outofscope.test"
+    (
+
+    _method
+      main
+      Object
+
+      _block
+
+        _let
+          x
+          Int
+
+          _no_expr
+          : _no_type
+
+          _int
+            10
+          : Int
+        : Int
+
+        _object
+          x
+        : _no_type
+      : _no_type
+    )

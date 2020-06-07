@@ -1,0 +1,2 @@
+/home/mhamza/cool/distro/testsuite/semant/missingclass.test:1: Class A inherits from an undefined class D.
+Compilation halted due to static semantic errors.

@@ -1,0 +1,38 @@
+--->Object
+Install class: ast.ClassNode@6d9c638
+--->IO
+Install class: ast.ClassNode@1ee0005
+--->Int
+Install class: ast.ClassNode@3d012ddd
+--->Bool
+Install class: ast.ClassNode@1eb44e46
+--->String
+Install class: ast.ClassNode@515f550a
+
+_program
+
+  _class
+    Main
+    IO
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/initwithself.test"
+    (
+
+    _attr
+      x
+      Main
+
+      _object
+        self
+      : _no_type
+
+    _method
+      main
+      Object
+
+      _block
+
+        _object
+          self
+        : _no_type
+      : _no_type
+    )

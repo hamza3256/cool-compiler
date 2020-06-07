@@ -1,0 +1,100 @@
+--->Object
+Install class: ast.ClassNode@515f550a
+--->IO
+Install class: ast.ClassNode@5e91993f
+--->Int
+Install class: ast.ClassNode@379619aa
+--->Bool
+Install class: ast.ClassNode@5e265ba4
+--->String
+Install class: ast.ClassNode@123a439b
+
+_program
+
+  _class
+    Main
+    Object
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/cycleinmethods.test"
+    (
+
+    _method
+      main
+      Int
+
+      _int
+        0
+      : _no_type
+    )
+
+  _class
+    A
+    Object
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/cycleinmethods.test"
+    (
+
+    _method
+      f
+
+      _formal
+        a
+        Int
+      Int
+
+      _dispatch
+
+        _object
+          self
+        : _no_type
+        g
+        (
+
+        _int
+          0
+        : _no_type
+        )
+      : _no_type
+
+    _method
+      g
+
+      _formal
+        a
+        Int
+      Int
+
+      _dispatch
+
+        _object
+          self
+        : _no_type
+        h
+        (
+
+        _int
+          0
+        : _no_type
+        )
+      : _no_type
+
+    _method
+      h
+
+      _formal
+        a
+        Int
+      Int
+
+      _dispatch
+
+        _object
+          self
+        : _no_type
+        f
+        (
+
+        _int
+          0
+        : _no_type
+        )
+      : _no_type
+    )

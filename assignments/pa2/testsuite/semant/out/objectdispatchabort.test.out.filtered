@@ -1,0 +1,48 @@
+--->Object
+Install class: ast.ClassNode@1eb44e46
+--->IO
+Install class: ast.ClassNode@515f550a
+--->Int
+Install class: ast.ClassNode@5e91993f
+--->Bool
+Install class: ast.ClassNode@379619aa
+--->String
+Install class: ast.ClassNode@5e265ba4
+
+_program
+
+  _class
+    A
+    Object
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/objectdispatchabort.test"
+    (
+
+    _method
+      foo
+      Object
+
+      _dispatch
+
+        _new
+          Object
+        : _no_type
+        abort
+        (
+        )
+      : _no_type
+    )
+
+  _class
+    Main
+    Object
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/objectdispatchabort.test"
+    (
+
+    _method
+      main
+      Int
+
+      _int
+        6
+      : _no_type
+    )

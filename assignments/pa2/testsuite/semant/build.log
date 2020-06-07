@@ -1,0 +1,76 @@
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ SRC_DIR=/home/mhamza/cool/distro/src
++ component=semant
++ cd /home/mhamza/cool/distro/assignments/pa2
++ buildme semant
++ set -e
++ set -o pipefail
++ component=all
++ '[' 1 -ge 1 ']'
++ '[' semant = lexer ']'
++ '[' semant = parser ']'
++ '[' semant = frontend ']'
++ '[' semant = semant ']'
++ component=semant
+++ dirname /home/mhamza/cool/distro/bin/buildme
++ COOL_DIR=/home/mhamza/cool/distro/bin/..
+++ cd /home/mhamza/cool/distro/bin/..
+++ pwd
++ COOL_DIR=/home/mhamza/cool/distro
+++ pwd
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ SRC_DIR=/home/mhamza/cool/distro/src
++ ANTLR_JAR=/home/mhamza/cool/distro/lib/antlr-4.6-complete.jar
++ CLASSPATH=/home/mhamza/cool/distro/lib/antlr-4.6-complete.jar:
++ JAVA_SRC_FILE_LIST='/home/mhamza/cool/distro/src/ast/*.java     /home/mhamza/cool/distro/src/ast/visitor/*.java     /home/mhamza/cool/distro/src/Flags.java     /home/mhamza/cool/distro/src/Utilities.java     /home/mhamza/cool/distro/src/StringTable.java     /home/mhamza/cool/distro/src/TreeConstants.java     /home/mhamza/cool/distro/src/ASTBuilder.java     /home/mhamza/cool/distro/src/CoolErrorListener.java     /home/mhamza/cool/distro/src/CoolErrorStrategy.java     /home/mhamza/cool/distro/src/Frontend.java'
++ '[' semant '!=' frontend ']'
++ JAVA_SRC_FILE_LIST='/home/mhamza/cool/distro/src/ast/*.java     /home/mhamza/cool/distro/src/ast/visitor/*.java     /home/mhamza/cool/distro/src/Flags.java     /home/mhamza/cool/distro/src/Utilities.java     /home/mhamza/cool/distro/src/StringTable.java     /home/mhamza/cool/distro/src/TreeConstants.java     /home/mhamza/cool/distro/src/ASTBuilder.java     /home/mhamza/cool/distro/src/CoolErrorListener.java     /home/mhamza/cool/distro/src/CoolErrorStrategy.java     /home/mhamza/cool/distro/src/Frontend.java         /home/mhamza/cool/distro/src/SymbolTable.java         /home/mhamza/cool/distro/src/ClassTable.java         /home/mhamza/cool/distro/src/ASTRebuilder.java         /home/mhamza/cool/distro/src/TypeCheckingVisitor.java         /home/mhamza/cool/distro/src/ScopeCheckingVisitor.java         /home/mhamza/cool/distro/src/Semant.java         /home/mhamza/cool/distro/src/Analysis.java'
++ '[' semant '!=' frontend ']'
++ '[' semant '!=' semant ']'
++ ANTLR='java -jar /home/mhamza/cool/distro/lib/antlr-4.6-complete.jar'
++ java -jar /home/mhamza/cool/distro/lib/antlr-4.6-complete.jar -o /home/mhamza/cool/distro/assignments/pa2 -listener -visitor -lib /home/mhamza/cool/distro/src /home/mhamza/cool/distro/src/CoolParser.g4 /home/mhamza/cool/distro/src/CoolLexer.g4
++ '[' semant '!=' frontend ']'
++ java -jar /home/mhamza/cool/distro/lib/antlr-4.6-complete.jar -o /home/mhamza/cool/distro/assignments/pa2 -visitor -package ast.parser -lib /home/mhamza/cool/distro/src/ast/parser /home/mhamza/cool/distro/src/ast/parser/ASTParser.g4 /home/mhamza/cool/distro/src/ast/parser/ASTLexer.g4
++ tee build.log
++ javac -cp /home/mhamza/cool/distro/lib/antlr-4.6-complete.jar: -d /home/mhamza/cool/distro/assignments/pa2/ /home/mhamza/cool/distro/src/ast/AssignNode.java /home/mhamza/cool/distro/src/ast/AttributeNode.java /home/mhamza/cool/distro/src/ast/BinopNode.java /home/mhamza/cool/distro/src/ast/BlockNode.java /home/mhamza/cool/distro/src/ast/BoolBinopNode.java /home/mhamza/cool/distro/src/ast/BoolConstNode.java /home/mhamza/cool/distro/src/ast/BoolUnopNode.java /home/mhamza/cool/distro/src/ast/BranchNode.java /home/mhamza/cool/distro/src/ast/CaseNode.java /home/mhamza/cool/distro/src/ast/ClassNode.java /home/mhamza/cool/distro/src/ast/CompNode.java /home/mhamza/cool/distro/src/ast/CondNode.java /home/mhamza/cool/distro/src/ast/ConstNode.java /home/mhamza/cool/distro/src/ast/DispatchNode.java /home/mhamza/cool/distro/src/ast/DivideNode.java /home/mhamza/cool/distro/src/ast/EqNode.java /home/mhamza/cool/distro/src/ast/ExpressionNode.java /home/mhamza/cool/distro/src/ast/FeatureNode.java /home/mhamza/cool/distro/src/ast/FormalNode.java /home/mhamza/cool/distro/src/ast/IntBinopNode.java /home/mhamza/cool/distro/src/ast/IntConstNode.java /home/mhamza/cool/distro/src/ast/IntUnopNode.java /home/mhamza/cool/distro/src/ast/IsVoidNode.java /home/mhamza/cool/distro/src/ast/LEqNode.java /home/mhamza/cool/distro/src/ast/LetNode.java /home/mhamza/cool/distro/src/ast/LoopNode.java /home/mhamza/cool/distro/src/ast/LTNode.java /home/mhamza/cool/distro/src/ast/MethodNode.java /home/mhamza/cool/distro/src/ast/MulNode.java /home/mhamza/cool/distro/src/ast/NegNode.java /home/mhamza/cool/distro/src/ast/NewNode.java /home/mhamza/cool/distro/src/ast/NoExpressionNode.java /home/mhamza/cool/distro/src/ast/ObjectNode.java /home/mhamza/cool/distro/src/ast/PlusNode.java /home/mhamza/cool/distro/src/ast/ProgramNode.java /home/mhamza/cool/distro/src/ast/StaticDispatchNode.java /home/mhamza/cool/distro/src/ast/StringConstNode.java /home/mhamza/cool/distro/src/ast/SubNode.java /home/mhamza/cool/distro/src/ast/Symbol.java /home/mhamza/cool/distro/src/ast/Tree.java /home/mhamza/cool/distro/src/ast/TreeNode.java /home/mhamza/cool/distro/src/ast/UnopNode.java /home/mhamza/cool/distro/src/ast/visitor/BaseVisitor.java /home/mhamza/cool/distro/src/ast/visitor/DumpVisitor.java /home/mhamza/cool/distro/src/ast/visitor/TreeVisitor.java /home/mhamza/cool/distro/src/Flags.java /home/mhamza/cool/distro/src/Utilities.java /home/mhamza/cool/distro/src/StringTable.java /home/mhamza/cool/distro/src/TreeConstants.java /home/mhamza/cool/distro/src/ASTBuilder.java /home/mhamza/cool/distro/src/CoolErrorListener.java /home/mhamza/cool/distro/src/CoolErrorStrategy.java /home/mhamza/cool/distro/src/Frontend.java /home/mhamza/cool/distro/src/SymbolTable.java /home/mhamza/cool/distro/src/ClassTable.java /home/mhamza/cool/distro/src/ASTRebuilder.java /home/mhamza/cool/distro/src/TypeCheckingVisitor.java /home/mhamza/cool/distro/src/ScopeCheckingVisitor.java /home/mhamza/cool/distro/src/Semant.java /home/mhamza/cool/distro/src/Analysis.java ASTLexer.java ASTParserBaseListener.java ASTParserBaseVisitor.java ASTParser.java ASTParserListener.java ASTParserVisitor.java CoolLexer.java CoolParserBaseListener.java CoolParserBaseVisitor.java CoolParser.java CoolParserListener.java CoolParserVisitor.java
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
++ '[' semant = frontend ']'
++ '[' semant = semant ']'
++ echo 'lexer $@ | parser $@ | java -cp .:/home/mhamza/cool/distro/lib/antlr-4.6-complete.jar: Analysis $@'
++ chmod +x mysemant
++ echo 'lexer $@ | parser $@ | semant'
++ chmod +x refsemant
++ ./mysemant /home/mhamza/cool/distro/examples/hello_world.cl
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    "/home/mhamza/cool/distro/examples/hello_world.cl"
+    (
+    #1
+    _method
+      main
+      SELF_TYPE
+      #1
+      _dispatch
+        #1
+        _object
+          self
+        : SELF_TYPE
+        out_string
+        (
+        #1
+        _string
+          "Hello, World.\n"
+        : String
+        )
+      : SELF_TYPE
+    )
++ '[' semant = backend ']'
++ '[' semant = all ']'
++ set +o pipefail
++ set +e
++ set +x

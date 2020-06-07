@@ -1,0 +1,29 @@
+
+_program
+
+  _class
+    Main
+    IO
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/letinit.test"
+    (
+
+    _method
+      main
+      Object
+
+      _block
+
+        _let
+          x
+          Int
+
+          _int
+            5
+          : Int
+
+          _object
+            x
+          : Int
+        : Int
+      : Int
+    )

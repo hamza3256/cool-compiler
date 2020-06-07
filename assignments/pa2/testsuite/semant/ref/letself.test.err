@@ -1,0 +1,2 @@
+/home/mhamza/cool/distro/testsuite/semant/letself.test:1: 'self' cannot be bound in a 'let' expression.
+Compilation halted due to static semantic errors.

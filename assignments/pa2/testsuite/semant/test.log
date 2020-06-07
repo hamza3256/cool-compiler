@@ -1,0 +1,2952 @@
++ testfile=/home/mhamza/cool/distro/testsuite/semant/anattributenamedself.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/anattributenamedself.test
++ outname=anattributenamedself.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/anattributenamedself.test
++ errname=anattributenamedself.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/anattributenamedself.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/anattributenamedself.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/anattributenamedself.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/anattributenamedself.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/anattributenamedself.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/anattributenamedself.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/anattributenamedself.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/anattributenamedself.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/anattributenamedself.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/anattributenamedself.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/anattributenamedself.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/anattributenamedself.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/anattributenamedself.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/anattributenamedself.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/anattributenamedself.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/anattributenamedself.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/assignment.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/assignment.test
++ outname=assignment.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/assignment.test
++ errname=assignment.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/assignment.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/assignment.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/assignment.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/assignment.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/assignment.test.out
+13c13
+<       #1
+---
+>       #0
+20c20
+<       #1
+---
+>       #0
+27c27
+<       #1
+---
+>       #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/assignment.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/assignment.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/assignment.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/assignment.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/assignment.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/assignment.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/assignment.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/assignment.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/assignment.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/assignment.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/assignment.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/assignment.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/assignment.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/assignment.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/assignment.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/assignnoconform.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/assignnoconform.test
++ outname=assignnoconform.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/assignnoconform.test
++ errname=assignnoconform.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/assignnoconform.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/assignnoconform.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/assignnoconform.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/assignnoconform.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/assignnoconform.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/assignnoconform.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/assignnoconform.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/assignnoconform.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/assignnoconform.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/assignnoconform.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/assignnoconform.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/assignnoconform.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/assignnoconform.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/assignnoconform.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/assignnoconform.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/assignnoconform.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/attrbadinit.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/attrbadinit.test
++ outname=attrbadinit.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/attrbadinit.test
++ errname=attrbadinit.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/attrbadinit.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/attrbadinit.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/attrbadinit.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/attrbadinit.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/attrbadinit.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/attrbadinit.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/attrbadinit.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/attrbadinit.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/attrbadinit.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/attrbadinit.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/attrbadinit.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/attrbadinit.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/attrbadinit.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/attrbadinit.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/attrbadinit.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/attrbadinit.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/attroverride.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/attroverride.test
++ outname=attroverride.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/attroverride.test
++ errname=attroverride.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/attroverride.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/attroverride.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/attroverride.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/attroverride.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/attroverride.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/attroverride.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/attroverride.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/attroverride.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/attroverride.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/attroverride.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/attroverride.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/attroverride.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/attroverride.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/attroverride.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/attroverride.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/attroverride.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/badargs1.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/badargs1.test
++ outname=badargs1.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/badargs1.test
++ errname=badargs1.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/badargs1.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/badargs1.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badargs1.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badargs1.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badargs1.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badargs1.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badargs1.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badargs1.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badargs1.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badargs1.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badargs1.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badargs1.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badargs1.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badargs1.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badargs1.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/badargs1.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/badarith.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/badarith.test
++ outname=badarith.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/badarith.test
++ errname=badarith.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/badarith.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/badarith.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badarith.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badarith.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badarith.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badarith.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badarith.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badarith.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badarith.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badarith.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badarith.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badarith.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badarith.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badarith.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badarith.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/badarith.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/baddispatch.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/baddispatch.test
++ outname=baddispatch.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/baddispatch.test
++ errname=baddispatch.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/baddispatch.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/baddispatch.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/baddispatch.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/baddispatch.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/baddispatch.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/baddispatch.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/baddispatch.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/baddispatch.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/baddispatch.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/baddispatch.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/baddispatch.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/baddispatch.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/baddispatch.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/baddispatch.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/baddispatch.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/baddispatch.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/badequalitytest2.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/badequalitytest2.test
++ outname=badequalitytest2.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/badequalitytest2.test
++ errname=badequalitytest2.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/badequalitytest2.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/badequalitytest2.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badequalitytest2.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badequalitytest2.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badequalitytest2.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badequalitytest2.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badequalitytest2.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badequalitytest2.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badequalitytest2.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badequalitytest2.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badequalitytest2.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badequalitytest2.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badequalitytest2.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badequalitytest2.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badequalitytest2.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/badequalitytest2.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/badequalitytest.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/badequalitytest.test
++ outname=badequalitytest.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/badequalitytest.test
++ errname=badequalitytest.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/badequalitytest.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/badequalitytest.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badequalitytest.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badequalitytest.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badequalitytest.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badequalitytest.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badequalitytest.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badequalitytest.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badequalitytest.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badequalitytest.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badequalitytest.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badequalitytest.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badequalitytest.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badequalitytest.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badequalitytest.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/badequalitytest.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/badmethodcallsitself.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/badmethodcallsitself.test
++ outname=badmethodcallsitself.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/badmethodcallsitself.test
++ errname=badmethodcallsitself.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/badmethodcallsitself.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/badmethodcallsitself.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badmethodcallsitself.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badmethodcallsitself.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badmethodcallsitself.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badmethodcallsitself.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badmethodcallsitself.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badmethodcallsitself.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badmethodcallsitself.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badmethodcallsitself.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badmethodcallsitself.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badmethodcallsitself.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badmethodcallsitself.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badmethodcallsitself.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badmethodcallsitself.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/badmethodcallsitself.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/badredefineint.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/badredefineint.test
++ outname=badredefineint.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/badredefineint.test
++ errname=badredefineint.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/badredefineint.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/badredefineint.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badredefineint.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badredefineint.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badredefineint.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badredefineint.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badredefineint.test.err
+1a2
+> /home/mhamza/cool/distro/testsuite/semant/badredefineint.test:1: Class Int was previously defined.
++ errdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badredefineint.test.err
++ sed -i.bak '/Compilation halted due to static semantic errors./!d' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badredefineint.test.err.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badredefineint.test.err
++ sed -i.bak '/Compilation halted due to static semantic errors./!d' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badredefineint.test.err.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badredefineint.test.err.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badredefineint.test.err.filtered
++ errdiffrc=0
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badredefineint.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badredefineint.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badredefineint.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badredefineint.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badredefineint.test.err.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badredefineint.test.err.filtered.bak
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/badredefineint.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/badstaticdispatch.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/badstaticdispatch.test
++ outname=badstaticdispatch.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/badstaticdispatch.test
++ errname=badstaticdispatch.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/badstaticdispatch.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/badstaticdispatch.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badstaticdispatch.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badstaticdispatch.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badstaticdispatch.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badstaticdispatch.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badstaticdispatch.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badstaticdispatch.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badstaticdispatch.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badstaticdispatch.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badstaticdispatch.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badstaticdispatch.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badstaticdispatch.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badstaticdispatch.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badstaticdispatch.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/badstaticdispatch.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/badwhilebody.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/badwhilebody.test
++ outname=badwhilebody.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/badwhilebody.test
++ errname=badwhilebody.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/badwhilebody.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/badwhilebody.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badwhilebody.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badwhilebody.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badwhilebody.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badwhilebody.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badwhilebody.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badwhilebody.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badwhilebody.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badwhilebody.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badwhilebody.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badwhilebody.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badwhilebody.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badwhilebody.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badwhilebody.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/badwhilebody.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/badwhilecond.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/badwhilecond.test
++ outname=badwhilecond.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/badwhilecond.test
++ errname=badwhilecond.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/badwhilecond.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/badwhilecond.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badwhilecond.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badwhilecond.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badwhilecond.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badwhilecond.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badwhilecond.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badwhilecond.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badwhilecond.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badwhilecond.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badwhilecond.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badwhilecond.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/badwhilecond.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badwhilecond.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/badwhilecond.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/badwhilecond.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/basicclassestree.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/basicclassestree.test
++ outname=basicclassestree.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/basicclassestree.test
++ errname=basicclassestree.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/basicclassestree.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/basicclassestree.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/basicclassestree.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/basicclassestree.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/basicclassestree.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/basicclassestree.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/basicclassestree.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/basicclassestree.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/basicclassestree.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/basicclassestree.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/basicclassestree.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/basicclassestree.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/basicclassestree.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/basicclassestree.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/basicclassestree.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/basicclassestree.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/basic.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/basic.test
++ outname=basic.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/basic.test
++ errname=basic.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/basic.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/basic.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/basic.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/basic.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/basic.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/basic.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/basic.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/basic.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/basic.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/basic.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/basic.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/basic.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/basic.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/basic.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/basic.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/basic.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/caseidenticalbranch.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/caseidenticalbranch.test
++ outname=caseidenticalbranch.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/caseidenticalbranch.test
++ errname=caseidenticalbranch.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/caseidenticalbranch.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/caseidenticalbranch.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/caseidenticalbranch.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/caseidenticalbranch.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/caseidenticalbranch.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/caseidenticalbranch.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/caseidenticalbranch.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/caseidenticalbranch.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/caseidenticalbranch.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/caseidenticalbranch.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/caseidenticalbranch.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/caseidenticalbranch.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/caseidenticalbranch.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/caseidenticalbranch.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/caseidenticalbranch.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/caseidenticalbranch.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/cells.cl.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/cells.cl.test
++ outname=cells.cl.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/cells.cl.test
++ errname=cells.cl.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/cells.cl.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/cells.cl.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/cells.cl.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/cells.cl.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/cells.cl.test.out
+13c13
+<       #1
+---
+>       #0
+390c390
+<         #1
+---
+>         #0
+411c411
+<             #1
+---
+>             #0
+503c503
+<       #1
+---
+>       #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/cells.cl.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/cells.cl.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/cells.cl.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/cells.cl.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/cells.cl.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/cells.cl.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/cells.cl.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/cells.cl.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/cells.cl.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/cells.cl.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/cells.cl.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/cells.cl.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/cells.cl.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/cells.cl.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/cells.cl.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/classes.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/classes.test
++ outname=classes.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/classes.test
++ errname=classes.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/classes.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/classes.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/classes.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/classes.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/classes.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/classes.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/classes.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/classes.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/classes.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/classes.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/classes.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/classes.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/classes.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/classes.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/classes.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/classes.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/compare.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/compare.test
++ outname=compare.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/compare.test
++ errname=compare.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/compare.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/compare.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/compare.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/compare.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/compare.test.out
+42c42
+<       #1
+---
+>       #0
+49c49
+<       #1
+---
+>       #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/compare.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/compare.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/compare.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/compare.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/compare.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/compare.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/compare.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/compare.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/compare.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/compare.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/compare.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/compare.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/compare.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/compare.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/compare.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/comparisons.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/comparisons.test
++ outname=comparisons.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/comparisons.test
++ errname=comparisons.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/comparisons.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/comparisons.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/comparisons.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/comparisons.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/comparisons.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/comparisons.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/comparisons.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/comparisons.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/comparisons.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/comparisons.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/comparisons.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/comparisons.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/comparisons.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/comparisons.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/comparisons.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/comparisons.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/cycleinmethods.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/cycleinmethods.test
++ outname=cycleinmethods.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/cycleinmethods.test
++ errname=cycleinmethods.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/cycleinmethods.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/cycleinmethods.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/cycleinmethods.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/cycleinmethods.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/cycleinmethods.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/cycleinmethods.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/cycleinmethods.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/cycleinmethods.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/cycleinmethods.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/cycleinmethods.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/cycleinmethods.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/cycleinmethods.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/cycleinmethods.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/cycleinmethods.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/cycleinmethods.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/cycleinmethods.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/dispatch.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/dispatch.test
++ outname=dispatch.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/dispatch.test
++ errname=dispatch.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/dispatch.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/dispatch.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/dispatch.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/dispatch.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/dispatch.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/dispatch.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/dispatch.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/dispatch.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/dispatch.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/dispatch.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/dispatch.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/dispatch.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/dispatch.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/dispatch.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/dispatch.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/dispatch.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/dupformals.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/dupformals.test
++ outname=dupformals.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/dupformals.test
++ errname=dupformals.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/dupformals.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/dupformals.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/dupformals.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/dupformals.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/dupformals.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/dupformals.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/dupformals.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/dupformals.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/dupformals.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/dupformals.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/dupformals.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/dupformals.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/dupformals.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/dupformals.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/dupformals.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/dupformals.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/expressionblock.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/expressionblock.test
++ outname=expressionblock.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/expressionblock.test
++ errname=expressionblock.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/expressionblock.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/expressionblock.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/expressionblock.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/expressionblock.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/expressionblock.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/expressionblock.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/expressionblock.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/expressionblock.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/expressionblock.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/expressionblock.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/expressionblock.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/expressionblock.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/expressionblock.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/expressionblock.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/expressionblock.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/expressionblock.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/forwardinherits.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/forwardinherits.test
++ outname=forwardinherits.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/forwardinherits.test
++ errname=forwardinherits.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/forwardinherits.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/forwardinherits.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/forwardinherits.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/forwardinherits.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/forwardinherits.test.out
+13c13
+<       #1
+---
+>       #0
+27c27
+<       #1
+---
+>       #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/forwardinherits.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/forwardinherits.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/forwardinherits.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/forwardinherits.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/forwardinherits.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/forwardinherits.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/forwardinherits.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/forwardinherits.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/forwardinherits.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/forwardinherits.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/forwardinherits.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/forwardinherits.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/forwardinherits.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/forwardinherits.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/forwardinherits.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/hairyscary.cl.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/hairyscary.cl.test
++ outname=hairyscary.cl.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/hairyscary.cl.test
++ errname=hairyscary.cl.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/hairyscary.cl.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/hairyscary.cl.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/hairyscary.cl.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/hairyscary.cl.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/hairyscary.cl.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/hairyscary.cl.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/hairyscary.cl.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/hairyscary.cl.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/hairyscary.cl.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/hairyscary.cl.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/hairyscary.cl.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/hairyscary.cl.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/hairyscary.cl.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/hairyscary.cl.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/hairyscary.cl.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/hairyscary.cl.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/if.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/if.test
++ outname=if.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/if.test
++ errname=if.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/if.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/if.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/if.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/if.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/if.test.out
+13c13
+<       #1
+---
+>       #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/if.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/if.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/if.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/if.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/if.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/if.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/if.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/if.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/if.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/if.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/if.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/if.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/if.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/if.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/if.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/inheritsbool.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/inheritsbool.test
++ outname=inheritsbool.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/inheritsbool.test
++ errname=inheritsbool.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/inheritsbool.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/inheritsbool.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsbool.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsbool.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsbool.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsbool.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsbool.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsbool.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsbool.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsbool.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsbool.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsbool.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsbool.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsbool.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsbool.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/inheritsbool.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/inheritsObject.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/inheritsObject.test
++ outname=inheritsObject.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/inheritsObject.test
++ errname=inheritsObject.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/inheritsObject.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/inheritsObject.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsObject.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsObject.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsObject.test.out
+13c13
+<       #1
+---
+>       #0
+35c35
+<       #1
+---
+>       #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsObject.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsObject.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsObject.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsObject.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsObject.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsObject.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsObject.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsObject.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsObject.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsObject.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsObject.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsObject.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsObject.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsObject.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/inheritsObject.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/inheritsselftype.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/inheritsselftype.test
++ outname=inheritsselftype.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/inheritsselftype.test
++ errname=inheritsselftype.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/inheritsselftype.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/inheritsselftype.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsselftype.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsselftype.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsselftype.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsselftype.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsselftype.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsselftype.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsselftype.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsselftype.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsselftype.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsselftype.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsselftype.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsselftype.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsselftype.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/inheritsselftype.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/inheritsstring.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/inheritsstring.test
++ outname=inheritsstring.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/inheritsstring.test
++ errname=inheritsstring.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/inheritsstring.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/inheritsstring.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsstring.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsstring.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsstring.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsstring.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsstring.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsstring.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsstring.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsstring.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsstring.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsstring.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/inheritsstring.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsstring.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/inheritsstring.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/inheritsstring.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/initwithself.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/initwithself.test
++ outname=initwithself.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/initwithself.test
++ errname=initwithself.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/initwithself.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/initwithself.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/initwithself.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/initwithself.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/initwithself.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/initwithself.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/initwithself.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/initwithself.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/initwithself.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/initwithself.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/initwithself.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/initwithself.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/initwithself.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/initwithself.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/initwithself.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/initwithself.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/io.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/io.test
++ outname=io.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/io.test
++ errname=io.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/io.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/io.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/io.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/io.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/io.test.out
+13c13
+<       #1
+---
+>       #0
+20c20
+<       #1
+---
+>       #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/io.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/io.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/io.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/io.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/io.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/io.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/io.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/io.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/io.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/io.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/io.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/io.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/io.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/io.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/io.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/isvoid.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/isvoid.test
++ outname=isvoid.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/isvoid.test
++ errname=isvoid.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/isvoid.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/isvoid.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/isvoid.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/isvoid.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/isvoid.test.out
+13c13
+<       #1
+---
+>       #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/isvoid.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/isvoid.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/isvoid.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/isvoid.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/isvoid.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/isvoid.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/isvoid.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/isvoid.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/isvoid.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/isvoid.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/isvoid.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/isvoid.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/isvoid.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/isvoid.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/isvoid.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/letbadinit.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/letbadinit.test
++ outname=letbadinit.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/letbadinit.test
++ errname=letbadinit.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/letbadinit.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/letbadinit.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letbadinit.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letbadinit.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letbadinit.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letbadinit.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letbadinit.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letbadinit.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letbadinit.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letbadinit.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letbadinit.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letbadinit.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letbadinit.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letbadinit.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letbadinit.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/letbadinit.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/letinit.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/letinit.test
++ outname=letinit.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/letinit.test
++ errname=letinit.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/letinit.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/letinit.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letinit.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letinit.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letinit.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letinit.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letinit.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letinit.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letinit.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letinit.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letinit.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letinit.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letinit.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letinit.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letinit.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/letinit.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/letnoinit.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/letnoinit.test
++ outname=letnoinit.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/letnoinit.test
++ errname=letnoinit.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/letnoinit.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/letnoinit.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letnoinit.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letnoinit.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letnoinit.test.out
+19c19
+<           #1
+---
+>           #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letnoinit.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letnoinit.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letnoinit.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letnoinit.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letnoinit.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letnoinit.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letnoinit.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letnoinit.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letnoinit.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letnoinit.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letnoinit.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letnoinit.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letnoinit.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letnoinit.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/letnoinit.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/letself.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/letself.test
++ outname=letself.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/letself.test
++ errname=letself.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/letself.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/letself.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letself.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letself.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letself.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letself.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letself.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letself.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letself.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letself.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letself.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letself.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letself.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letself.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letself.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/letself.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/letselftype.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/letselftype.test
++ outname=letselftype.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/letselftype.test
++ errname=letselftype.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/letselftype.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/letselftype.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letselftype.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letselftype.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letselftype.test.out
+23c23
+<             #1
+---
+>             #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letselftype.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letselftype.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letselftype.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letselftype.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letselftype.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letselftype.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letselftype.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letselftype.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letselftype.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letselftype.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letselftype.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letselftype.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letselftype.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letselftype.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/letselftype.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/letshadows.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/letshadows.test
++ outname=letshadows.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/letshadows.test
++ errname=letshadows.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/letshadows.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/letshadows.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letshadows.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letshadows.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letshadows.test.out
+13c13
+<       #1
+---
+>       #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letshadows.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letshadows.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letshadows.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letshadows.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letshadows.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letshadows.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letshadows.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letshadows.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letshadows.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letshadows.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letshadows.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/letshadows.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letshadows.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/letshadows.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/letshadows.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/list.cl.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/list.cl.test
++ outname=list.cl.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/list.cl.test
++ errname=list.cl.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/list.cl.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/list.cl.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/list.cl.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/list.cl.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/list.cl.test.out
+96c96
+<       #1
+---
+>       #0
+103c103
+<       #1
+---
+>       #0
+176c176
+<       #1
+---
+>       #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/list.cl.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/list.cl.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/list.cl.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/list.cl.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/list.cl.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/list.cl.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/list.cl.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/list.cl.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/list.cl.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/list.cl.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/list.cl.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/list.cl.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/list.cl.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/list.cl.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/list.cl.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/lubtest.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/lubtest.test
++ outname=lubtest.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/lubtest.test
++ errname=lubtest.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/lubtest.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/lubtest.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/lubtest.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/lubtest.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/lubtest.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/lubtest.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/lubtest.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/lubtest.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/lubtest.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/lubtest.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/lubtest.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/lubtest.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/lubtest.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/lubtest.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/lubtest.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/lubtest.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/methodcallsitself.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/methodcallsitself.test
++ outname=methodcallsitself.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/methodcallsitself.test
++ errname=methodcallsitself.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/methodcallsitself.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/methodcallsitself.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/methodcallsitself.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/methodcallsitself.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/methodcallsitself.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/methodcallsitself.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/methodcallsitself.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/methodcallsitself.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/methodcallsitself.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/methodcallsitself.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/methodcallsitself.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/methodcallsitself.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/methodcallsitself.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/methodcallsitself.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/methodcallsitself.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/methodcallsitself.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/methodnameclash.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/methodnameclash.test
++ outname=methodnameclash.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/methodnameclash.test
++ errname=methodnameclash.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/methodnameclash.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/methodnameclash.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/methodnameclash.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/methodnameclash.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/methodnameclash.test.out
+13c13
+<       #1
+---
+>       #0
+20c20
+<       #1
+---
+>       #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/methodnameclash.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/methodnameclash.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/methodnameclash.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/methodnameclash.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/methodnameclash.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/methodnameclash.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/methodnameclash.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/methodnameclash.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/methodnameclash.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/methodnameclash.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/methodnameclash.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/methodnameclash.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/methodnameclash.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/methodnameclash.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/methodnameclash.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/missingclass.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/missingclass.test
++ outname=missingclass.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/missingclass.test
++ errname=missingclass.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/missingclass.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/missingclass.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/missingclass.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/missingclass.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/missingclass.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/missingclass.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/missingclass.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/missingclass.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/missingclass.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/missingclass.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/missingclass.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/missingclass.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/missingclass.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/missingclass.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/missingclass.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/missingclass.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/neg.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/neg.test
++ outname=neg.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/neg.test
++ errname=neg.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/neg.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/neg.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/neg.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/neg.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/neg.test.out
+13c13
+<       #1
+---
+>       #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/neg.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/neg.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/neg.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/neg.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/neg.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/neg.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/neg.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/neg.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/neg.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/neg.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/neg.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/neg.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/neg.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/neg.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/neg.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/newselftype.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/newselftype.test
++ outname=newselftype.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/newselftype.test
++ errname=newselftype.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/newselftype.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/newselftype.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/newselftype.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/newselftype.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/newselftype.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/newselftype.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/newselftype.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/newselftype.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/newselftype.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/newselftype.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/newselftype.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/newselftype.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/newselftype.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/newselftype.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/newselftype.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/newselftype.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/nomain.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/nomain.test
++ outname=nomain.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/nomain.test
++ errname=nomain.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/nomain.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/nomain.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/nomain.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/nomain.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/nomain.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/nomain.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/nomain.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/nomain.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/nomain.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/nomain.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/nomain.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/nomain.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/nomain.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/nomain.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/nomain.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/nomain.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/objectdispatchabort.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/objectdispatchabort.test
++ outname=objectdispatchabort.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/objectdispatchabort.test
++ errname=objectdispatchabort.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/objectdispatchabort.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/objectdispatchabort.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/objectdispatchabort.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/objectdispatchabort.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/objectdispatchabort.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/objectdispatchabort.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/objectdispatchabort.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/objectdispatchabort.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/objectdispatchabort.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/objectdispatchabort.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/objectdispatchabort.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/objectdispatchabort.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/objectdispatchabort.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/objectdispatchabort.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/objectdispatchabort.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/objectdispatchabort.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/outofscope.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/outofscope.test
++ outname=outofscope.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/outofscope.test
++ errname=outofscope.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/outofscope.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/outofscope.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/outofscope.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/outofscope.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/outofscope.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/outofscope.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/outofscope.test.err
+1a2
+> /home/mhamza/cool/distro/testsuite/semant/outofscope.test:1: Undeclared identifier x.
++ errdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/outofscope.test.err
++ sed -i.bak '/Compilation halted due to static semantic errors./!d' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/outofscope.test.err.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/outofscope.test.err
++ sed -i.bak '/Compilation halted due to static semantic errors./!d' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/outofscope.test.err.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/outofscope.test.err.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/outofscope.test.err.filtered
++ errdiffrc=0
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/outofscope.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/outofscope.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/outofscope.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/outofscope.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/outofscope.test.err.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/outofscope.test.err.filtered.bak
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/outofscope.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/overriderenamearg.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/overriderenamearg.test
++ outname=overriderenamearg.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/overriderenamearg.test
++ errname=overriderenamearg.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/overriderenamearg.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/overriderenamearg.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overriderenamearg.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overriderenamearg.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overriderenamearg.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overriderenamearg.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overriderenamearg.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overriderenamearg.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overriderenamearg.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overriderenamearg.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overriderenamearg.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overriderenamearg.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overriderenamearg.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overriderenamearg.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overriderenamearg.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/overriderenamearg.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/overridingmethod2.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/overridingmethod2.test
++ outname=overridingmethod2.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/overridingmethod2.test
++ errname=overridingmethod2.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/overridingmethod2.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/overridingmethod2.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod2.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod2.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod2.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod2.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod2.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod2.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod2.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod2.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod2.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod2.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod2.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod2.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod2.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/overridingmethod2.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/overridingmethod3.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/overridingmethod3.test
++ outname=overridingmethod3.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/overridingmethod3.test
++ errname=overridingmethod3.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/overridingmethod3.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/overridingmethod3.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod3.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod3.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod3.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod3.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod3.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod3.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod3.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod3.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod3.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod3.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod3.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod3.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod3.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/overridingmethod3.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/overridingmethod4.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/overridingmethod4.test
++ outname=overridingmethod4.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/overridingmethod4.test
++ errname=overridingmethod4.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/overridingmethod4.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/overridingmethod4.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod4.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod4.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod4.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod4.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod4.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod4.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod4.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod4.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod4.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod4.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod4.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod4.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod4.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/overridingmethod4.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/overridingmethod.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/overridingmethod.test
++ outname=overridingmethod.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/overridingmethod.test
++ errname=overridingmethod.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/overridingmethod.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/overridingmethod.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/overridingmethod.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/overridingmethod.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/overridingmethod.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/redefinedclass.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/redefinedclass.test
++ outname=redefinedclass.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/redefinedclass.test
++ errname=redefinedclass.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/redefinedclass.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/redefinedclass.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/redefinedclass.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/redefinedclass.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/redefinedclass.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/redefinedclass.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/redefinedclass.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/redefinedclass.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/redefinedclass.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/redefinedclass.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/redefinedclass.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/redefinedclass.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/redefinedclass.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/redefinedclass.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/redefinedclass.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/redefinedclass.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/redefinedobject.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/redefinedobject.test
++ outname=redefinedobject.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/redefinedobject.test
++ errname=redefinedobject.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/redefinedobject.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/redefinedobject.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/redefinedobject.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/redefinedobject.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/redefinedobject.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/redefinedobject.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/redefinedobject.test.err
+1a2
+> /home/mhamza/cool/distro/testsuite/semant/redefinedobject.test:1: Class Object was previously defined.
++ errdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/redefinedobject.test.err
++ sed -i.bak '/Compilation halted due to static semantic errors./!d' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/redefinedobject.test.err.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/redefinedobject.test.err
++ sed -i.bak '/Compilation halted due to static semantic errors./!d' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/redefinedobject.test.err.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/redefinedobject.test.err.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/redefinedobject.test.err.filtered
++ errdiffrc=0
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/redefinedobject.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/redefinedobject.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/redefinedobject.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/redefinedobject.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/redefinedobject.test.err.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/redefinedobject.test.err.filtered.bak
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/redefinedobject.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/returntypenoexist.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/returntypenoexist.test
++ outname=returntypenoexist.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/returntypenoexist.test
++ errname=returntypenoexist.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/returntypenoexist.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/returntypenoexist.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/returntypenoexist.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/returntypenoexist.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/returntypenoexist.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/returntypenoexist.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/returntypenoexist.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/returntypenoexist.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/returntypenoexist.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/returntypenoexist.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/returntypenoexist.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/returntypenoexist.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/returntypenoexist.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/returntypenoexist.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/returntypenoexist.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/returntypenoexist.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/scopes.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/scopes.test
++ outname=scopes.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/scopes.test
++ errname=scopes.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/scopes.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/scopes.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/scopes.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/scopes.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/scopes.test.out
+28c28
+<       #1
+---
+>       #0
+75c75
+<             #1
+---
+>             #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/scopes.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/scopes.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/scopes.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/scopes.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/scopes.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/scopes.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/scopes.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/scopes.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/scopes.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/scopes.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/scopes.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/scopes.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/scopes.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/scopes.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/scopes.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/self-assignment.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/self-assignment.test
++ outname=self-assignment.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/self-assignment.test
++ errname=self-assignment.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/self-assignment.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/self-assignment.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/self-assignment.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/self-assignment.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/self-assignment.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/self-assignment.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/self-assignment.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/self-assignment.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/self-assignment.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/self-assignment.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/self-assignment.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/self-assignment.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/self-assignment.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/self-assignment.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/self-assignment.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/self-assignment.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/selfinformalparameter.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/selfinformalparameter.test
++ outname=selfinformalparameter.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/selfinformalparameter.test
++ errname=selfinformalparameter.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/selfinformalparameter.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/selfinformalparameter.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selfinformalparameter.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selfinformalparameter.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selfinformalparameter.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selfinformalparameter.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selfinformalparameter.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selfinformalparameter.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selfinformalparameter.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selfinformalparameter.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selfinformalparameter.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selfinformalparameter.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selfinformalparameter.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selfinformalparameter.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selfinformalparameter.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/selfinformalparameter.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/selftypebadreturn.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/selftypebadreturn.test
++ outname=selftypebadreturn.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/selftypebadreturn.test
++ errname=selftypebadreturn.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/selftypebadreturn.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/selftypebadreturn.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftypebadreturn.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftypebadreturn.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftypebadreturn.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftypebadreturn.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftypebadreturn.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftypebadreturn.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftypebadreturn.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftypebadreturn.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftypebadreturn.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftypebadreturn.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftypebadreturn.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftypebadreturn.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftypebadreturn.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/selftypebadreturn.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/selftypeparameterposition.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/selftypeparameterposition.test
++ outname=selftypeparameterposition.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/selftypeparameterposition.test
++ errname=selftypeparameterposition.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/selftypeparameterposition.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/selftypeparameterposition.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftypeparameterposition.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftypeparameterposition.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftypeparameterposition.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftypeparameterposition.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftypeparameterposition.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftypeparameterposition.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftypeparameterposition.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftypeparameterposition.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftypeparameterposition.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftypeparameterposition.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftypeparameterposition.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftypeparameterposition.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftypeparameterposition.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/selftypeparameterposition.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/selftyperedeclared.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/selftyperedeclared.test
++ outname=selftyperedeclared.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/selftyperedeclared.test
++ errname=selftyperedeclared.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/selftyperedeclared.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/selftyperedeclared.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftyperedeclared.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftyperedeclared.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftyperedeclared.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftyperedeclared.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftyperedeclared.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftyperedeclared.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftyperedeclared.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftyperedeclared.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftyperedeclared.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftyperedeclared.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/selftyperedeclared.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftyperedeclared.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/selftyperedeclared.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/selftyperedeclared.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/signaturechange.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/signaturechange.test
++ outname=signaturechange.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/signaturechange.test
++ errname=signaturechange.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/signaturechange.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/signaturechange.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/signaturechange.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/signaturechange.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/signaturechange.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/signaturechange.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/signaturechange.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/signaturechange.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/signaturechange.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/signaturechange.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/signaturechange.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/signaturechange.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/signaturechange.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/signaturechange.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/signaturechange.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/signaturechange.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/simplearith.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/simplearith.test
++ outname=simplearith.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/simplearith.test
++ errname=simplearith.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/simplearith.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/simplearith.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/simplearith.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/simplearith.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/simplearith.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/simplearith.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/simplearith.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/simplearith.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/simplearith.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/simplearith.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/simplearith.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/simplearith.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/simplearith.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/simplearith.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/simplearith.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/simplearith.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/simplecase.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/simplecase.test
++ outname=simplecase.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/simplecase.test
++ errname=simplecase.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/simplecase.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/simplecase.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/simplecase.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/simplecase.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/simplecase.test.out
+28c28
+<       #1
+---
+>       #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/simplecase.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/simplecase.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/simplecase.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/simplecase.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/simplecase.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/simplecase.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/simplecase.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/simplecase.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/simplecase.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/simplecase.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/simplecase.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/simplecase.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/simplecase.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/simplecase.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/simplecase.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/staticdispatch.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/staticdispatch.test
++ outname=staticdispatch.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/staticdispatch.test
++ errname=staticdispatch.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/staticdispatch.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/staticdispatch.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/staticdispatch.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/staticdispatch.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/staticdispatch.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/staticdispatch.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/staticdispatch.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/staticdispatch.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/staticdispatch.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/staticdispatch.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/staticdispatch.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/staticdispatch.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/staticdispatch.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/staticdispatch.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/staticdispatch.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/staticdispatch.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/stringtest.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/stringtest.test
++ outname=stringtest.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/stringtest.test
++ errname=stringtest.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/stringtest.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/stringtest.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/stringtest.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/stringtest.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/stringtest.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/stringtest.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/stringtest.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/stringtest.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/stringtest.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/stringtest.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/stringtest.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/stringtest.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/stringtest.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/stringtest.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/stringtest.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/stringtest.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/subtypemethodreturn.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/subtypemethodreturn.test
++ outname=subtypemethodreturn.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/subtypemethodreturn.test
++ errname=subtypemethodreturn.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/subtypemethodreturn.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/subtypemethodreturn.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/subtypemethodreturn.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/subtypemethodreturn.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/subtypemethodreturn.test.out
+17c17
+<         #1
+---
+>         #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/subtypemethodreturn.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/subtypemethodreturn.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/subtypemethodreturn.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/subtypemethodreturn.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/subtypemethodreturn.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/subtypemethodreturn.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/subtypemethodreturn.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/subtypemethodreturn.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/subtypemethodreturn.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/subtypemethodreturn.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/subtypemethodreturn.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/subtypemethodreturn.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/subtypemethodreturn.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/subtypemethodreturn.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/subtypemethodreturn.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/trickyatdispatch2.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/trickyatdispatch2.test
++ outname=trickyatdispatch2.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/trickyatdispatch2.test
++ errname=trickyatdispatch2.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/trickyatdispatch2.test
++ refrc=1
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/trickyatdispatch2.test
++ myrc=1
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/trickyatdispatch2.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/trickyatdispatch2.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/trickyatdispatch2.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/trickyatdispatch2.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/trickyatdispatch2.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/trickyatdispatch2.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/trickyatdispatch2.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/trickyatdispatch2.test.out.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/trickyatdispatch2.test.out.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/trickyatdispatch2.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/trickyatdispatch2.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/trickyatdispatch2.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/trickyatdispatch2.test.err.filtered.bak': No such file or directory
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 1 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/trickyatdispatch2.test
++ testfile=/home/mhamza/cool/distro/testsuite/semant/trickyatdispatch.test
++ results_outdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out
++ results_refdir=/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/home/mhamza/cool/distro/assignments/pa2
++ REF_DIR=/home/mhamza/cool/distro/../ref
++ component=semant
+++ basename /home/mhamza/cool/distro/testsuite/semant/trickyatdispatch.test
++ outname=trickyatdispatch.test.out
+++ basename /home/mhamza/cool/distro/testsuite/semant/trickyatdispatch.test
++ errname=trickyatdispatch.test.err
+++ which filter
++ filter='sed -f /home/mhamza/cool/distro/bin/filter'
++ ./refsemant /home/mhamza/cool/distro/testsuite/semant/trickyatdispatch.test
++ refrc=0
++ ./mysemant /home/mhamza/cool/distro/testsuite/semant/trickyatdispatch.test
++ myrc=0
++ grep exception /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/trickyatdispatch.test.err
++ '[' 1 -eq 0 ']'
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/trickyatdispatch.test.out /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/trickyatdispatch.test.out
+58c58
+<       #1
+---
+>       #0
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/trickyatdispatch.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/trickyatdispatch.test.out.filtered
++ sed -f /home/mhamza/cool/distro/bin/filter /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/trickyatdispatch.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/trickyatdispatch.test.out.filtered
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/trickyatdispatch.test.out.filtered /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/trickyatdispatch.test.out.filtered
++ outdiffrc=0
++ diff /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/trickyatdispatch.test.err /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/trickyatdispatch.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/trickyatdispatch.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/trickyatdispatch.test.out.filtered.bak
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/trickyatdispatch.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/out/trickyatdispatch.test.err.filtered.bak': No such file or directory
++ rm /home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/trickyatdispatch.test.err.filtered.bak
+rm: cannot remove '/home/mhamza/cool/distro/assignments/pa2/testsuite/semant/ref/trickyatdispatch.test.err.filtered.bak': No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 0
+PASS: testsuite/semant/trickyatdispatch.test

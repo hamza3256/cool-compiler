@@ -1,0 +1,74 @@
+--->Object
+Install class: ast.ClassNode@4d591d15
+--->IO
+Install class: ast.ClassNode@48cf768c
+--->Int
+Install class: ast.ClassNode@5ccd43c2
+--->Bool
+Install class: ast.ClassNode@7960847b
+--->String
+Install class: ast.ClassNode@5c8da962
+
+_program
+
+  _class
+    A
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/comparisons.test"
+    (
+
+    _method
+      foo
+
+      _formal
+        a
+        A
+      Bool
+
+      _block
+
+        _lt
+
+          _int
+            6
+          : Int
+
+          _int
+            7
+          : Int
+        : Bool
+
+        _leq
+
+          _int
+            6
+          : Int
+
+          _int
+            7
+          : Int
+        : Bool
+
+        _comp
+
+          _bool
+            1
+          : Bool
+        : Bool
+      : Bool
+    )
+
+  _class
+    Main
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/comparisons.test"
+    (
+
+    _method
+      main
+      Int
+
+      _int
+        6
+      : Int
+    )

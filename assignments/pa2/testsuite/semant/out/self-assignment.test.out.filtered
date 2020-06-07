@@ -1,0 +1,54 @@
+
+_program
+
+  _class
+    Main
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/self-assignment.test"
+    (
+
+    _method
+      main
+      Int
+
+      _int
+        0
+      : Int
+    )
+
+  _class
+    A
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/self-assignment.test"
+    (
+
+    _attr
+      x
+      A
+
+      _object
+        self
+      : SELF_TYPE
+
+    _method
+      foo
+
+      _formal
+        x
+        A
+      A
+
+      _assign
+        self
+
+        _dispatch
+
+          _object
+            self
+          : SELF_TYPE
+          copy
+          (
+          )
+        : SELF_TYPE
+      : _no_type
+    )

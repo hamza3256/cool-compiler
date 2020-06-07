@@ -1,0 +1,53 @@
+
+_program
+
+  _class
+    A
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/inheritsObject.test"
+    (
+
+    _attr
+      foo
+      Int
+
+      _no_expr
+      : _no_type
+
+    _method
+      main
+      Int
+
+      _int
+        6
+      : Int
+    )
+
+  _class
+    B
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/inheritsObject.test"
+    (
+
+    _attr
+      bar
+      Int
+
+      _no_expr
+      : _no_type
+    )
+
+  _class
+    Main
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/inheritsObject.test"
+    (
+
+    _method
+      main
+      Int
+
+      _int
+        6
+      : Int
+    )

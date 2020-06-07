@@ -1,0 +1,2 @@
+/home/mhamza/cool/distro/testsuite/semant/badredefineint.test:1: Redefinition of basic class Int.
+Compilation halted due to static semantic errors.

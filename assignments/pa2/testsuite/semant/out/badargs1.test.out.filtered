@@ -1,0 +1,69 @@
+
+_program
+
+  _class
+    Main
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/badargs1.test"
+    (
+
+    _method
+      main
+      Object
+
+      _int
+        0
+      : Int
+    )
+
+  _class
+    A
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/badargs1.test"
+    (
+
+    _method
+      bar
+      Object
+
+      _dispatch
+
+        _new
+          B
+        : B
+        foo
+        (
+
+        _object
+          self
+        : SELF_TYPE
+
+        _int
+          29
+        : Int
+        )
+      : String
+    )
+
+  _class
+    B
+    A
+    "/home/mhamza/cool/distro/testsuite/semant/badargs1.test"
+    (
+
+    _method
+      foo
+
+      _formal
+        b
+        B
+
+      _formal
+        x
+        Int
+      String
+
+      _string
+        "moo"
+      : String
+    )

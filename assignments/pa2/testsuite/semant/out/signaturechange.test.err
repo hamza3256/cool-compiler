@@ -1,0 +1,2 @@
+/home/mhamza/cool/distro/testsuite/semant/signaturechange.test:1: Incompatible number of formal parameters in redefined method foo.
+Compilation halted due to static semantic errors.

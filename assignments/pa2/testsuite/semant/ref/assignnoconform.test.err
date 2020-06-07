@@ -1,0 +1,2 @@
+/home/mhamza/cool/distro/testsuite/semant/assignnoconform.test:1: Type A of assigned expression does not conform to declared type B of identifier b.
+Compilation halted due to static semantic errors.

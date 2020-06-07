@@ -1,0 +1,39 @@
+--->Object
+Install class: ast.ClassNode@123772c4
+--->IO
+Install class: ast.ClassNode@7d6f77cc
+--->Int
+Install class: ast.ClassNode@73a28541
+--->Bool
+Install class: ast.ClassNode@69222c14
+--->String
+Install class: ast.ClassNode@782830e
+
+_program
+
+  _class
+    Main
+    IO
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/letinit.test"
+    (
+
+    _method
+      main
+      Object
+
+      _block
+
+        _let
+          x
+          Int
+
+          _int
+            5
+          : _no_type
+
+          _object
+            x
+          : _no_type
+        : _no_type
+      : _no_type
+    )

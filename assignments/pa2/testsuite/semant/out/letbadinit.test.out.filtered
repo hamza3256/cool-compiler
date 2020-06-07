@@ -1,0 +1,47 @@
+
+_program
+
+  _class
+    Main
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/letbadinit.test"
+    (
+
+    _method
+      main
+      Object
+
+      _let
+        x
+        B
+
+        _new
+          A
+        : A
+
+        _int
+          10
+        : Int
+      : Int
+    )
+
+  _class
+    A
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/letbadinit.test"
+    (
+    )
+
+  _class
+    B
+    A
+    "/home/mhamza/cool/distro/testsuite/semant/letbadinit.test"
+    (
+    )
+
+  _class
+    C
+    B
+    "/home/mhamza/cool/distro/testsuite/semant/letbadinit.test"
+    (
+    )

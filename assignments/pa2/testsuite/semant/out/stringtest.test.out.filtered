@@ -1,0 +1,68 @@
+--->Object
+Install class: ast.ClassNode@53bd815b
+--->IO
+Install class: ast.ClassNode@7637f22
+--->Int
+Install class: ast.ClassNode@762efe5d
+--->Bool
+Install class: ast.ClassNode@41a4555e
+--->String
+Install class: ast.ClassNode@39ed3c8d
+
+_program
+
+  _class
+    Main
+    Object
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/stringtest.test"
+    (
+
+    _method
+      main
+      Object
+
+      _block
+
+        _dispatch
+
+          _string
+            "test"
+          : _no_type
+          length
+          (
+          )
+        : _no_type
+
+        _dispatch
+
+          _string
+            "test"
+          : _no_type
+          substr
+          (
+
+          _int
+            0
+          : _no_type
+
+          _int
+            1
+          : _no_type
+          )
+        : _no_type
+
+        _dispatch
+
+          _string
+            "test"
+          : _no_type
+          concat
+          (
+
+          _string
+            " me"
+          : _no_type
+          )
+        : _no_type
+      : _no_type
+    )

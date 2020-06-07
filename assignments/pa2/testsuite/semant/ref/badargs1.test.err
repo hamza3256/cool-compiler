@@ -1,0 +1,2 @@
+/home/mhamza/cool/distro/testsuite/semant/badargs1.test:1: In call of method foo, type SELF_TYPE of parameter b does not conform to declared type B.
+Compilation halted due to static semantic errors.

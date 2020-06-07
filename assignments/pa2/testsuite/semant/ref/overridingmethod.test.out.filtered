@@ -1,0 +1,47 @@
+
+_program
+
+  _class
+    A
+    Object
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/overridingmethod.test"
+    (
+
+    _method
+      foo
+      Int
+
+      _int
+        6
+      : Int
+    )
+
+  _class
+    B
+    A
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/overridingmethod.test"
+    (
+
+    _method
+      foo
+      Int
+
+      _int
+        7
+      : Int
+    )
+
+  _class
+    Main
+    Object
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/overridingmethod.test"
+    (
+
+    _method
+      main
+      Int
+
+      _int
+        6
+      : Int
+    )

@@ -1,0 +1,67 @@
+--->Object
+Install class: ast.ClassNode@76ccd017
+--->IO
+Install class: ast.ClassNode@26f0a63f
+--->Int
+Install class: ast.ClassNode@53bd815b
+--->Bool
+Install class: ast.ClassNode@7637f22
+--->String
+Install class: ast.ClassNode@762efe5d
+
+_program
+
+  _class
+    A
+    Object
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/newselftype.test"
+    (
+
+    _attr
+      bar
+      Int
+
+      _dispatch
+
+        _object
+          self
+        : _no_type
+        foo
+        (
+
+        _new
+          SELF_TYPE
+        : _no_type
+        )
+      : _no_type
+
+    _method
+      foo
+
+      _formal
+        a
+        A
+      Int
+
+      _neg
+
+        _int
+          7
+        : _no_type
+      : _no_type
+    )
+
+  _class
+    Main
+    Object
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/newselftype.test"
+    (
+
+    _method
+      main
+      Int
+
+      _int
+        6
+      : _no_type
+    )

@@ -1,0 +1,3 @@
+/home/mhamza/cool/distro/testsuite/semant/redefinedobject.test:1: Redefinition of basic class Object.
+/home/mhamza/cool/distro/testsuite/semant/redefinedobject.test:1: Class Object was previously defined.
+Compilation halted due to static semantic errors.

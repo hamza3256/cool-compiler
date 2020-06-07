@@ -1,0 +1,57 @@
+
+_program
+
+  _class
+    A
+    Object
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/newselftype.test"
+    (
+
+    _attr
+      bar
+      Int
+
+      _dispatch
+
+        _object
+          self
+        : SELF_TYPE
+        foo
+        (
+
+        _new
+          SELF_TYPE
+        : SELF_TYPE
+        )
+      : Int
+
+    _method
+      foo
+
+      _formal
+        a
+        A
+      Int
+
+      _neg
+
+        _int
+          7
+        : Int
+      : Int
+    )
+
+  _class
+    Main
+    Object
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/newselftype.test"
+    (
+
+    _method
+      main
+      Int
+
+      _int
+        6
+      : Int
+    )

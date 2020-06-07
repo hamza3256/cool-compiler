@@ -1,0 +1,2 @@
+/home/mhamza/cool/distro/testsuite/semant/badarith.test:1: non-Int arguments: Int + String
+Compilation halted due to static semantic errors.

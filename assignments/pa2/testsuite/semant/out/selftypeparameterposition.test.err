@@ -1,0 +1,2 @@
+/home/mhamza/cool/distro/testsuite/semant/selftypeparameterposition.test:1: Formal parameter x cannot have type SELF_TYPE.
+Compilation halted due to static semantic errors.

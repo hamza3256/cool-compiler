@@ -1,0 +1,3 @@
+/home/mhamza/cool/distro/testsuite/semant/returntypenoexist.test:1: Undefined return type PinkElephant in method main.
+/home/mhamza/cool/distro/testsuite/semant/returntypenoexist.test:1: 'new' used with undefined class PinkElephant.
+Compilation halted due to static semantic errors.

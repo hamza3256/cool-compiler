@@ -1,0 +1,55 @@
+
+_program
+
+  _class
+    Main
+    Object
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/overriderenamearg.test"
+    (
+
+    _method
+      main
+      Int
+
+      _int
+        0
+      : Int
+    )
+
+  _class
+    D
+    Object
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/overriderenamearg.test"
+    (
+
+    _method
+      inky
+
+      _formal
+        b
+        Int
+      Object
+
+      _int
+        1
+      : Int
+    )
+
+  _class
+    E
+    D
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/overriderenamearg.test"
+    (
+
+    _method
+      inky
+
+      _formal
+        c
+        Int
+      Object
+
+      _int
+        1
+      : Int
+    )

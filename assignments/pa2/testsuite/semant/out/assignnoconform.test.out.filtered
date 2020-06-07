@@ -1,0 +1,49 @@
+
+_program
+
+  _class
+    Main
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/assignnoconform.test"
+    (
+
+    _attr
+      a
+      A
+
+      _no_expr
+      : _no_type
+
+    _attr
+      b
+      B
+
+      _no_expr
+      : _no_type
+
+    _method
+      main
+      Object
+
+      _assign
+        b
+
+        _new
+          A
+        : A
+      : A
+    )
+
+  _class
+    A
+    Object
+    "/home/mhamza/cool/distro/testsuite/semant/assignnoconform.test"
+    (
+    )
+
+  _class
+    B
+    A
+    "/home/mhamza/cool/distro/testsuite/semant/assignnoconform.test"
+    (
+    )

@@ -1,0 +1,2 @@
+/home/mhamza/cool/distro/testsuite/semant/outofscope.test:1: Undeclared identifier x.
+Compilation halted due to static semantic errors.

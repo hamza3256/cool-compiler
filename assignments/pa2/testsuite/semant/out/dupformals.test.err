@@ -1,0 +1,3 @@
+/home/mhamza/cool/distro/testsuite/semant/dupformals.test:1: Formal parameter x is multiply defined.
+/home/mhamza/cool/distro/testsuite/semant/dupformals.test:1: Formal parameter x is multiply defined.
+Compilation halted due to static semantic errors.

@@ -1,0 +1,2 @@
+/home/mhamza/cool/distro/testsuite/semant/badwhilecond.test:1: Loop condition does not have type Bool.
+Compilation halted due to static semantic errors.

@@ -1,0 +1,57 @@
+--->Object
+Install class: ast.ClassNode@ee7d9f1
+--->IO
+Install class: ast.ClassNode@1edf1c96
+--->Int
+Install class: ast.ClassNode@6996db8
+--->Bool
+Install class: ast.ClassNode@7fbe847c
+--->String
+Install class: ast.ClassNode@c2e1f26
+
+_program
+
+  _class
+    A
+    Object
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/overridingmethod.test"
+    (
+
+    _method
+      foo
+      Int
+
+      _int
+        6
+      : _no_type
+    )
+
+  _class
+    B
+    A
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/overridingmethod.test"
+    (
+
+    _method
+      foo
+      Int
+
+      _int
+        7
+      : _no_type
+    )
+
+  _class
+    Main
+    Object
+    "/home/maria/compilers-material/coursework/final_checkpoint_PA2/Team_Dijkstra/testsuite/semant/overridingmethod.test"
+    (
+
+    _method
+      main
+      Int
+
+      _int
+        6
+      : _no_type
+    )
