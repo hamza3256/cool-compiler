@@ -1,0 +1,2 @@
+"/home/raj/cool/distro/testsuite/parser/lteassociativity.test", line 3: syntax error at or near LESS_EQ_OPERATOR = <=
+Compilation halted due to lex and parse errors

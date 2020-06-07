@@ -1,0 +1,29 @@
+#1 STRING "\"I'm not going to escape this newline\n\""
+#4 STRING "\"This is also not escaped \\\\\n\""
+#7 ERROR "\""
+#7 TYPEID This
+#7 OBJECTID is
+#7 COMMA ,
+#7 OBJECTID though
+#7 ERROR "\\"
+#7 ERROR "\\"
+#7 ERROR "\\"
+#8 STRING "\"\n\n\""
+#10 ERROR "\\"
+#10 ERROR "\\"
+#10 STRING "\"\n\n\""
+#12 TYPEID It
+#12 ERROR "'"
+#12 OBJECTID s
+#12 OBJECTID fine
+#12 OBJECTID to
+#12 OBJECTID have
+#12 OBJECTID this
+#12 COLON :
+#12 ERROR "\\"
+#12 OBJECTID n
+#12 IN in
+#12 OBJECTID a
+#12 OBJECTID string
+#12 ERROR "\""
+#13 EOF <EOF>

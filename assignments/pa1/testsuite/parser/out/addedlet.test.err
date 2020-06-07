@@ -1,0 +1,2 @@
+"/home/raj/cool/distro/testsuite/parser/addedlet.test", line 2: syntax error at or near PLUS_OPERATOR = +
+Compilation halted due to lex and parse errors

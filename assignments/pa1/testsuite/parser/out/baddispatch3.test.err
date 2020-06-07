@@ -1,0 +1,4 @@
+"/home/raj/cool/distro/testsuite/parser/baddispatch3.test", line 2: syntax error at or near SEMICOLON = ;
+"/home/raj/cool/distro/testsuite/parser/baddispatch3.test", line 2: syntax error at or near INT = 3
+"/home/raj/cool/distro/testsuite/parser/baddispatch3.test", line 2: syntax error at or near PARENT_CLOSE = )
+Compilation halted due to lex and parse errors

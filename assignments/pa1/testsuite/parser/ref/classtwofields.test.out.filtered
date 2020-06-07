@@ -1,0 +1,23 @@
+
+_program
+
+  _class
+    Hello
+    Object
+    "/home/raj/cool/distro/testsuite/parser/classtwofields.test"
+    (
+
+    _attr
+      foo
+      Int
+
+      _no_expr
+      : _no_type
+
+    _attr
+      bar
+      String
+
+      _no_expr
+      : _no_type
+    )

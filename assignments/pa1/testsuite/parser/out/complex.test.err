@@ -1,0 +1,12 @@
+"/home/raj/cool/distro/testsuite/parser/complex.test", line 3: syntax error at or near ASSIGN_OPERATOR = <-
+"/home/raj/cool/distro/testsuite/parser/complex.test", line 3: syntax error at or near IN = in
+"/home/raj/cool/distro/testsuite/parser/complex.test", line 4: syntax error at or near EQ_OPERATOR = =
+"/home/raj/cool/distro/testsuite/parser/complex.test", line 5: syntax error at or near THEN = then
+"/home/raj/cool/distro/testsuite/parser/complex.test", line 18: syntax error at or near EQ_OPERATOR = =
+"/home/raj/cool/distro/testsuite/parser/complex.test", line 19: syntax error at or near EQ_OPERATOR = =
+"/home/raj/cool/distro/testsuite/parser/complex.test", line 25: syntax error at or near EQ_OPERATOR = =
+"/home/raj/cool/distro/testsuite/parser/complex.test", line 33: syntax error at or near EQ_OPERATOR = =
+"/home/raj/cool/distro/testsuite/parser/complex.test", line 34: syntax error at or near EQ_OPERATOR = =
+"/home/raj/cool/distro/testsuite/parser/complex.test", line 41: syntax error at or near EQ_OPERATOR = =
+"/home/raj/cool/distro/testsuite/parser/complex.test", line 48: syntax error at or near EQ_OPERATOR = =
+Compilation halted due to lex and parse errors

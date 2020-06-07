@@ -1,0 +1,5 @@
+"/home/raj/cool/distro/testsuite/parser/multipleclasses.test", line 6: syntax error at or near OBJECTID = extends
+"/home/raj/cool/distro/testsuite/parser/multipleclasses.test", line 8: syntax error at or near CURLY_CLOSE = }
+"/home/raj/cool/distro/testsuite/parser/multipleclasses.test", line 15: syntax error at or near OBJECTID = implements
+"/home/raj/cool/distro/testsuite/parser/multipleclasses.test", line 17: syntax error at or near OBJECTID = bar
+Compilation halted due to lex and parse errors

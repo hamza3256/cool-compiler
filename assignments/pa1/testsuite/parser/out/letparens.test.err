@@ -1,0 +1,4 @@
+"/home/raj/cool/distro/testsuite/parser/letparens.test", line 2: syntax error at or near PLUS_OPERATOR = +
+"/home/raj/cool/distro/testsuite/parser/letparens.test", line 3: syntax error at or near PLUS_OPERATOR = +
+"/home/raj/cool/distro/testsuite/parser/letparens.test", line 4: syntax error at or near PLUS_OPERATOR = +
+Compilation halted due to lex and parse errors

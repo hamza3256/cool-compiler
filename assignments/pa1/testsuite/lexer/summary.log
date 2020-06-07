@@ -1,0 +1,57 @@
+Testing lexer
+Testsuite in /home/raj/cool/distro/testsuite/lexer
+Results in /home/raj/cool/distro/assignments/pa1/testsuite/lexer
+Results directory exists and will be overwritten.
+Building lexer using /home/raj/cool/distro/bin/testscripts/lexer/buildtest
+Testing lexer using /home/raj/cool/distro/bin/testscripts/lexer/runtest
+PASS: testsuite/lexer/all_else_true.cool
+PASS: testsuite/lexer/arith.cool
+FAIL: testsuite/lexer/backslash2.cool
+FAIL: testsuite/lexer/backslash.cool
+PASS: testsuite/lexer/badidentifiers.cool
+PASS: testsuite/lexer/badkeywords.cool
+PASS: testsuite/lexer/book_list.cl.cool
+FAIL: testsuite/lexer/bothcomments.cool
+FAIL: testsuite/lexer/endcomment.cool
+FAIL: testsuite/lexer/eofstring.cool
+FAIL: testsuite/lexer/escapedeof.cool
+FAIL: testsuite/lexer/escapednull.cool
+FAIL: testsuite/lexer/escapedquote.cool
+FAIL: testsuite/lexer/escapedunprintables.cool
+PASS: testsuite/lexer/hairyscary.cool
+PASS: testsuite/lexer/integers2.cool
+PASS: testsuite/lexer/invalidcharacters.cool
+PASS: testsuite/lexer/io.cool
+PASS: testsuite/lexer/keywords.cool
+PASS: testsuite/lexer/life.cool
+PASS: testsuite/lexer/longcomment.cool
+PASS: testsuite/lexer/new_complex.cool
+FAIL: testsuite/lexer/null_in_string.cl.cool
+FAIL: testsuite/lexer/null_in_string_unescaped_newline.cl.cool
+PASS: testsuite/lexer/objectid.test.cool
+FAIL: testsuite/lexer/opencomment.cool
+PASS: testsuite/lexer/operators.cool
+FAIL: testsuite/lexer/pathologicalstrings.cool
+PASS: testsuite/lexer/s03.test.cool
+FAIL: testsuite/lexer/s04.test.cool
+PASS: testsuite/lexer/s05.test.cool
+PASS: testsuite/lexer/s14.test.cool
+PASS: testsuite/lexer/s16.test.cool
+FAIL: testsuite/lexer/s19.test.cool
+PASS: testsuite/lexer/s25.test.cool
+PASS: testsuite/lexer/s26.test.cool
+PASS: testsuite/lexer/s31.test.cool
+FAIL: testsuite/lexer/s32.test.cool
+FAIL: testsuite/lexer/s34.test.cool
+PASS: testsuite/lexer/sort_list.cl.cool
+PASS: testsuite/lexer/stringcomment.cool
+PASS: testsuite/lexer/twice_512_nested_comments.cl.cool
+PASS: testsuite/lexer/validcharacters.cool
+PASS: testsuite/lexer/weirdcharcomment.cool
+PASS: testsuite/lexer/wq0607-c1.cool
+FAIL: testsuite/lexer/wq0607-c2.cool
+FAIL: testsuite/lexer/wq0607-c3.cool
+FAIL: testsuite/lexer/wq0607-c4.cool
+Passed 28 of 48 tests for lexer
+See /home/raj/cool/distro/assignments/pa1/testsuite/lexer/test.log
+DONE

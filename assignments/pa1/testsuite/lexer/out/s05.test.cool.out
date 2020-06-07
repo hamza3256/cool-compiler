@@ -1,0 +1,2 @@
+#1 STRING "\"other unescaped whitespace: \t\f\022\013\""
+#2 EOF <EOF>

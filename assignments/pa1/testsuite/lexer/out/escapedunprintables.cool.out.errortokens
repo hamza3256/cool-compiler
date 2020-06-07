@@ -1,0 +1,7 @@
+#1 ERROR "\""
+#1 ERROR "\\"
+#2 ERROR "\\"
+#2 ERROR "\b"
+#3 ERROR "\\"
+#5 ERROR "\033"
+#5 ERROR "\""

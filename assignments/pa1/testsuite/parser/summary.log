@@ -1,0 +1,61 @@
+Testing parser
+Testsuite in /home/raj/cool/distro/testsuite/parser
+Results in /home/raj/cool/distro/assignments/pa1/testsuite/parser
+Building parser using /home/raj/cool/distro/bin/testscripts/parser/buildtest
+Testing parser using /home/raj/cool/distro/bin/testscripts/parser/runtest
+FAIL: testsuite/parser/addedlet.test
+FAIL: testsuite/parser/arithprecedence.test
+PASS: testsuite/parser/assigngetstype.test
+FAIL: testsuite/parser/assignseq.test
+FAIL: testsuite/parser/associativitydiv.test
+FAIL: testsuite/parser/associativity+.test
+FAIL: testsuite/parser/associativity-times.test
+FAIL: testsuite/parser/atoi.test
+PASS: testsuite/parser/baddispatch1.test
+PASS: testsuite/parser/baddispatch3.test
+PASS: testsuite/parser/baddispatch4.test
+PASS: testsuite/parser/badexprlist.test
+PASS: testsuite/parser/badfeatures.test
+PASS: testsuite/parser/classbadinherits.test
+PASS: testsuite/parser/classbadname.test
+FAIL: testsuite/parser/classmethodonearg.test
+PASS: testsuite/parser/classnoname.test
+FAIL: testsuite/parser/classonefield.test
+FAIL: testsuite/parser/classtwofields.test
+FAIL: testsuite/parser/comparisons-assoc.test
+FAIL: testsuite/parser/complex.test
+FAIL: testsuite/parser/dispatcharglist.test
+FAIL: testsuite/parser/dispatchnoargs.test
+FAIL: testsuite/parser/dispatchonearg.test
+PASS: testsuite/parser/emptyassign.test
+PASS: testsuite/parser/emptymethodbody.test
+PASS: testsuite/parser/emptyprogram.test
+PASS: testsuite/parser/emptystaticdispatch.test
+PASS: testsuite/parser/extrasemicolonblock.test
+PASS: testsuite/parser/firstbindingerrored.test
+FAIL: testsuite/parser/formallists.test
+FAIL: testsuite/parser/ifexpressionblock.test
+FAIL: testsuite/parser/ifnested.test
+PASS: testsuite/parser/ifnoelsebranch.test
+PASS: testsuite/parser/ifnoelse.test
+PASS: testsuite/parser/ifnofi.test
+PASS: testsuite/parser/isvoidbadtype.test
+FAIL: testsuite/parser/letassociativity.test
+FAIL: testsuite/parser/letinitmultiplebindings.test
+FAIL: testsuite/parser/letnoinit.test
+FAIL: testsuite/parser/letparens.test
+PASS: testsuite/parser/lteassociativity.test
+FAIL: testsuite/parser/multipleattributes.test
+PASS: testsuite/parser/multipleclasses.test
+PASS: testsuite/parser/multiplemethoderrors.test
+FAIL: testsuite/parser/nestedblocks.test
+FAIL: testsuite/parser/nestedlet.test
+PASS: testsuite/parser/newbadtype.test
+PASS: testsuite/parser/secondbindingerrored.test
+FAIL: testsuite/parser/whileexpressionblock.test
+PASS: testsuite/parser/whilenoloop.test
+FAIL: testsuite/parser/whileoneexpression.test
+PASS: testsuite/parser/while.test
+Passed 26 of 53 tests for parser
+See /home/raj/cool/distro/assignments/pa1/testsuite/parser/test.log
+DONE

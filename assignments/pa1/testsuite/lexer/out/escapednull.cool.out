@@ -1,0 +1,11 @@
+#1 ERROR "\""
+#1 TYPEID This
+#1 OBJECTID contains
+#1 OBJECTID an
+#1 OBJECTID escaped
+#1 OBJECTID null
+#1 OBJECTID character
+#1 ERROR "\\"
+#1 ERROR "\000"
+#1 ERROR "\""
+#2 EOF <EOF>

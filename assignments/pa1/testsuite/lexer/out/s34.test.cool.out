@@ -1,0 +1,10 @@
+#1 OBJECTID before_it
+#3 ERROR "\""
+#3 OBJECTID this
+#3 OBJECTID string
+#3 ERROR "\\"
+#4 OBJECTID doens
+#4 ERROR "'"
+#4 OBJECTID t
+#4 OBJECTID end
+#5 EOF <EOF>

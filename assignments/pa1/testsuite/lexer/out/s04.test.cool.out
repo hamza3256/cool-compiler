@@ -1,0 +1,8 @@
+#2 INT 0
+#4 INT 1
+#6 INT 2
+#8 INT 3
+#10 INT 4
+#11 ERROR "\013"
+#12 INT 5
+#13 EOF <EOF>

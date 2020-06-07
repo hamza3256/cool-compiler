@@ -1,0 +1,4 @@
+#3 STRING "\"(*\""
+#3 CLOSE_COMMENT *)
+#3 STRING "\"*)(*\""
+#5 EOF <EOF>

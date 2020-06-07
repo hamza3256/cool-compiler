@@ -1,0 +1,5 @@
+"/home/raj/cool/distro/testsuite/parser/badexprlist.test", line 2: syntax error at or near CURLY_CLOSE = }
+"/home/raj/cool/distro/testsuite/parser/badexprlist.test", line 2: syntax error at or near CURLY_CLOSE = }
+"/home/raj/cool/distro/testsuite/parser/badexprlist.test", line 3: syntax error at or near SEMICOLON = ;
+"/home/raj/cool/distro/testsuite/parser/badexprlist.test", line 3: syntax error at or near CURLY_CLOSE = }
+Compilation halted due to lex and parse errors

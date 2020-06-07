@@ -1,0 +1,3 @@
+"/home/raj/cool/distro/testsuite/parser/ifnested.test", line 3: syntax error at or near EQ_OPERATOR = =
+"/home/raj/cool/distro/testsuite/parser/ifnested.test", line 3: syntax error at or near LESS_OPERATOR = <
+Compilation halted due to lex and parse errors

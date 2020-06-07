@@ -1,0 +1,16 @@
+
+_program
+
+  _class
+    Hello
+    Object
+    "/home/raj/cool/distro/testsuite/parser/classonefield.test"
+    (
+
+    _attr
+      foo
+      Int
+
+      _no_expr
+      : _no_type
+    )

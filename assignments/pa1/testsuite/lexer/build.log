@@ -1,0 +1,40 @@
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ SRC_DIR=/home/raj/cool/distro/src
++ component=lexer
++ cd /home/raj/cool/distro/assignments/pa1
++ buildme lexer
++ set -e
++ set -o pipefail
++ component=all
++ '[' 1 -ge 1 ']'
++ '[' lexer = lexer ']'
++ component=frontend
+++ dirname /home/raj/cool/distro/bin/buildme
++ COOL_DIR=/home/raj/cool/distro/bin/..
+++ cd /home/raj/cool/distro/bin/..
+++ pwd
++ COOL_DIR=/home/raj/cool/distro
+++ pwd
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ SRC_DIR=/home/raj/cool/distro/src
++ ANTLR_JAR=/home/raj/cool/distro/lib/antlr-4.6-complete.jar
++ CLASSPATH=/home/raj/cool/distro/lib/antlr-4.6-complete.jar:
++ JAVA_SRC_FILE_LIST='/home/raj/cool/distro/src/ast/*.java     /home/raj/cool/distro/src/ast/visitor/*.java     /home/raj/cool/distro/src/Flags.java     /home/raj/cool/distro/src/Utilities.java     /home/raj/cool/distro/src/StringTable.java     /home/raj/cool/distro/src/TreeConstants.java     /home/raj/cool/distro/src/ASTBuilder.java     /home/raj/cool/distro/src/CoolErrorListener.java     /home/raj/cool/distro/src/CoolErrorStrategy.java     /home/raj/cool/distro/src/Frontend.java'
++ '[' frontend '!=' frontend ']'
++ '[' frontend '!=' frontend ']'
++ ANTLR='java -jar /home/raj/cool/distro/lib/antlr-4.6-complete.jar'
++ java -jar /home/raj/cool/distro/lib/antlr-4.6-complete.jar -o /home/raj/cool/distro/assignments/pa1 -listener -visitor -lib /home/raj/cool/distro/src /home/raj/cool/distro/src/CoolParser.g4 /home/raj/cool/distro/src/CoolLexer.g4
++ '[' frontend '!=' frontend ']'
++ javac -cp /home/raj/cool/distro/lib/antlr-4.6-complete.jar: -d /home/raj/cool/distro/assignments/pa1/ /home/raj/cool/distro/src/ast/AssignNode.java /home/raj/cool/distro/src/ast/AttributeNode.java /home/raj/cool/distro/src/ast/BinopNode.java /home/raj/cool/distro/src/ast/BlockNode.java /home/raj/cool/distro/src/ast/BoolBinopNode.java /home/raj/cool/distro/src/ast/BoolConstNode.java /home/raj/cool/distro/src/ast/BoolUnopNode.java /home/raj/cool/distro/src/ast/BranchNode.java /home/raj/cool/distro/src/ast/CaseNode.java /home/raj/cool/distro/src/ast/ClassNode.java /home/raj/cool/distro/src/ast/CompNode.java /home/raj/cool/distro/src/ast/CondNode.java /home/raj/cool/distro/src/ast/ConstNode.java /home/raj/cool/distro/src/ast/DispatchNode.java /home/raj/cool/distro/src/ast/DivideNode.java /home/raj/cool/distro/src/ast/EqNode.java /home/raj/cool/distro/src/ast/ExpressionNode.java /home/raj/cool/distro/src/ast/FeatureNode.java /home/raj/cool/distro/src/ast/FormalNode.java /home/raj/cool/distro/src/ast/IntBinopNode.java /home/raj/cool/distro/src/ast/IntConstNode.java /home/raj/cool/distro/src/ast/IntUnopNode.java /home/raj/cool/distro/src/ast/IsVoidNode.java /home/raj/cool/distro/src/ast/LEqNode.java /home/raj/cool/distro/src/ast/LetNode.java /home/raj/cool/distro/src/ast/LoopNode.java /home/raj/cool/distro/src/ast/LTNode.java /home/raj/cool/distro/src/ast/MethodNode.java /home/raj/cool/distro/src/ast/MulNode.java /home/raj/cool/distro/src/ast/NegNode.java /home/raj/cool/distro/src/ast/NewNode.java /home/raj/cool/distro/src/ast/NoExpressionNode.java /home/raj/cool/distro/src/ast/ObjectNode.java /home/raj/cool/distro/src/ast/PlusNode.java /home/raj/cool/distro/src/ast/ProgramNode.java /home/raj/cool/distro/src/ast/StaticDispatchNode.java /home/raj/cool/distro/src/ast/StringConstNode.java /home/raj/cool/distro/src/ast/SubNode.java /home/raj/cool/distro/src/ast/Symbol.java /home/raj/cool/distro/src/ast/Tree.java /home/raj/cool/distro/src/ast/TreeNode.java /home/raj/cool/distro/src/ast/UnopNode.java /home/raj/cool/distro/src/ast/visitor/BaseVisitor.java /home/raj/cool/distro/src/ast/visitor/DumpVisitor.java /home/raj/cool/distro/src/ast/visitor/TreeVisitor.java /home/raj/cool/distro/src/Flags.java /home/raj/cool/distro/src/Utilities.java /home/raj/cool/distro/src/StringTable.java /home/raj/cool/distro/src/TreeConstants.java /home/raj/cool/distro/src/ASTBuilder.java /home/raj/cool/distro/src/CoolErrorListener.java /home/raj/cool/distro/src/CoolErrorStrategy.java /home/raj/cool/distro/src/Frontend.java CoolLexer.java CoolParserBaseListener.java CoolParserBaseVisitor.java CoolParser.java CoolParserListener.java CoolParserVisitor.java
++ tee build.log
++ '[' frontend = frontend ']'
++ echo 'java -cp .:/home/raj/cool/distro/lib/antlr-4.6-complete.jar: Frontend $@'
++ chmod +x myfrontend
++ echo 'lexer $@ | parser $@'
++ chmod +x reffrontend
++ '[' frontend = semant ']'
++ '[' frontend = backend ']'
++ '[' frontend = all ']'
++ set +o pipefail
++ set +e
++ set +x

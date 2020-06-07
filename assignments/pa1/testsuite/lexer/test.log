@@ -1,0 +1,1604 @@
++ testfile=/home/raj/cool/distro/testsuite/lexer/all_else_true.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/all_else_true.cool
++ outname=all_else_true.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/all_else_true.cool
++ errname=all_else_true.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/all_else_true.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/all_else_true.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/all_else_true.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/all_else_true.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/all_else_true.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/all_else_true.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/arith.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/arith.cool
++ outname=arith.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/arith.cool
++ errname=arith.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/arith.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/arith.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/arith.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/arith.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/arith.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/arith.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/backslash2.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/backslash2.cool
++ outname=backslash2.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/backslash2.cool
++ errname=backslash2.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/backslash2.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/backslash2.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/backslash2.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/backslash2.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/backslash2.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/backslash2.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/backslash2.cool.out.errortokens
+1,4c1,9
+< #2 ERROR "Unterminated string constant"
+< #3 ERROR "Unterminated string constant"
+< #5 ERROR "Unterminated string constant"
+< #6 ERROR "Unterminated string constant"
+---
+> #7 ERROR "\""
+> #7 ERROR "\\"
+> #7 ERROR "\\"
+> #7 ERROR "\\"
+> #10 ERROR "\\"
+> #10 ERROR "\\"
+> #12 ERROR "'"
+> #12 ERROR "\\"
+> #12 ERROR "\""
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/backslash2.cool.out.errortokens.filtered /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/backslash2.cool.out.errortokens.filtered
+1,4c1,9
+<  ERROR "Unterminated string constant"
+<  ERROR "Unterminated string constant"
+<  ERROR "Unterminated string constant"
+<  ERROR "Unterminated string constant"
+---
+>  ERROR "\""
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "'"
+>  ERROR "\\"
+>  ERROR "\""
+FAIL: testsuite/lexer/backslash2.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/backslash.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/backslash.cool
++ outname=backslash.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/backslash.cool
++ errname=backslash.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/backslash.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/backslash.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/backslash.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/backslash.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/backslash.cool.out
++ myrc=0
++ '[' 0 -ne 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/backslash.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/backslash.cool.out.errortokens
+0a1,27
+> #1 ERROR "\""
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #1 ERROR "\\"
+> #3 ERROR "\\"
+> #5 ERROR "\""
+> #5 ERROR "'"
+> #5 ERROR "\\"
+> #6 ERROR "\""
++ exit 1
+FAIL: testsuite/lexer/backslash.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/badidentifiers.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/badidentifiers.cool
++ outname=badidentifiers.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/badidentifiers.cool
++ errname=badidentifiers.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/badidentifiers.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/badidentifiers.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/badidentifiers.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/badidentifiers.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/badidentifiers.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/badidentifiers.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/badidentifiers.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/badidentifiers.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/badkeywords.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/badkeywords.cool
++ outname=badkeywords.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/badkeywords.cool
++ errname=badkeywords.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/badkeywords.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/badkeywords.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/badkeywords.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/badkeywords.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/badkeywords.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/badkeywords.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/book_list.cl.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/book_list.cl.cool
++ outname=book_list.cl.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/book_list.cl.cool
++ errname=book_list.cl.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/book_list.cl.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/book_list.cl.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/book_list.cl.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/book_list.cl.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/book_list.cl.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/book_list.cl.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/bothcomments.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/bothcomments.cool
++ outname=bothcomments.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/bothcomments.cool
++ errname=bothcomments.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/bothcomments.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/bothcomments.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/bothcomments.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/bothcomments.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/bothcomments.cool.out
++ myrc=1
++ '[' 1 -ne 0 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/bothcomments.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/bothcomments.cool.out.errortokens
+1d0
+< #2 ERROR "Unmatched *)"
++ exit 1
+FAIL: testsuite/lexer/bothcomments.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/endcomment.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/endcomment.cool
++ outname=endcomment.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/endcomment.cool
++ errname=endcomment.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/endcomment.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/endcomment.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/endcomment.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/endcomment.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/endcomment.cool.out
++ myrc=1
++ '[' 1 -ne 0 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/endcomment.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/endcomment.cool.out.errortokens
+1d0
+< #1 ERROR "Unmatched *)"
++ exit 1
+FAIL: testsuite/lexer/endcomment.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/eofstring.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/eofstring.cool
++ outname=eofstring.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/eofstring.cool
++ errname=eofstring.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/eofstring.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/eofstring.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/eofstring.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/eofstring.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/eofstring.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/eofstring.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/eofstring.cool.out.errortokens
+1c1
+< #1 ERROR "EOF in string constant"
+---
+> #1 ERROR "\""
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/eofstring.cool.out.errortokens.filtered /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/eofstring.cool.out.errortokens.filtered
+1c1
+<  ERROR "EOF in string constant"
+---
+>  ERROR "\""
+FAIL: testsuite/lexer/eofstring.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/escapedeof.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/escapedeof.cool
++ outname=escapedeof.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/escapedeof.cool
++ errname=escapedeof.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/escapedeof.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/escapedeof.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/escapedeof.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/escapedeof.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/escapedeof.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/escapedeof.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/escapedeof.cool.out.errortokens
+1c1,3
+< #2 ERROR "EOF in string constant"
+---
+> #1 ERROR "\""
+> #1 ERROR "?"
+> #1 ERROR "\\"
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/escapedeof.cool.out.errortokens.filtered /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/escapedeof.cool.out.errortokens.filtered
+1c1,3
+<  ERROR "EOF in string constant"
+---
+>  ERROR "\""
+>  ERROR "?"
+>  ERROR "\\"
+FAIL: testsuite/lexer/escapedeof.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/escapednull.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/escapednull.cool
++ outname=escapednull.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/escapednull.cool
++ errname=escapednull.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/escapednull.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/escapednull.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/escapednull.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/escapednull.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/escapednull.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/escapednull.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/escapednull.cool.out.errortokens
+1c1,4
+< #1 ERROR "String contains escaped null character."
+---
+> #1 ERROR "\""
+> #1 ERROR "\\"
+> #1 ERROR "\000"
+> #1 ERROR "\""
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/escapednull.cool.out.errortokens.filtered /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/escapednull.cool.out.errortokens.filtered
+1c1,4
+<  ERROR "String contains escaped null character."
+---
+>  ERROR "\""
+>  ERROR "\\"
+>  ERROR "\000"
+>  ERROR "\""
+FAIL: testsuite/lexer/escapednull.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/escapedquote.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/escapedquote.cool
++ outname=escapedquote.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/escapedquote.cool
++ errname=escapedquote.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/escapedquote.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/escapedquote.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/escapedquote.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/escapedquote.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/escapedquote.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/escapedquote.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/escapedquote.cool.out.errortokens
+1c1,3
+< #1 ERROR "EOF in string constant"
+---
+> #1 ERROR "\""
+> #1 ERROR "\\"
+> #1 ERROR "\""
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/escapedquote.cool.out.errortokens.filtered /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/escapedquote.cool.out.errortokens.filtered
+1c1,3
+<  ERROR "EOF in string constant"
+---
+>  ERROR "\""
+>  ERROR "\\"
+>  ERROR "\""
+FAIL: testsuite/lexer/escapedquote.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/escapedunprintables.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/escapedunprintables.cool
++ outname=escapedunprintables.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/escapedunprintables.cool
++ errname=escapedunprintables.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/escapedunprintables.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/escapedunprintables.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/escapedunprintables.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/escapedunprintables.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/escapedunprintables.cool.out
++ myrc=0
++ '[' 0 -ne 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/escapedunprintables.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/escapedunprintables.cool.out.errortokens
+0a1,7
+> #1 ERROR "\""
+> #1 ERROR "\\"
+> #2 ERROR "\\"
+> #2 ERROR "\b"
+> #3 ERROR "\\"
+> #5 ERROR "\033"
+> #5 ERROR "\""
++ exit 1
+FAIL: testsuite/lexer/escapedunprintables.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/hairyscary.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/hairyscary.cool
++ outname=hairyscary.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/hairyscary.cool
++ errname=hairyscary.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/hairyscary.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/hairyscary.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/hairyscary.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/hairyscary.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/hairyscary.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/hairyscary.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/integers2.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/integers2.cool
++ outname=integers2.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/integers2.cool
++ errname=integers2.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/integers2.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/integers2.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/integers2.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/integers2.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/integers2.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/integers2.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/invalidcharacters.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/invalidcharacters.cool
++ outname=invalidcharacters.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/invalidcharacters.cool
++ errname=invalidcharacters.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/invalidcharacters.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/invalidcharacters.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/invalidcharacters.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/invalidcharacters.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/invalidcharacters.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/invalidcharacters.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/invalidcharacters.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/invalidcharacters.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/io.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/io.cool
++ outname=io.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/io.cool
++ errname=io.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/io.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/io.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/io.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/io.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/io.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/io.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/keywords.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/keywords.cool
++ outname=keywords.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/keywords.cool
++ errname=keywords.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/keywords.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/keywords.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/keywords.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/keywords.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/keywords.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/keywords.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/life.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/life.cool
++ outname=life.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/life.cool
++ errname=life.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/life.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/life.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/life.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/life.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/life.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/life.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/longcomment.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/longcomment.cool
++ outname=longcomment.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/longcomment.cool
++ errname=longcomment.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/longcomment.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/longcomment.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/longcomment.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/longcomment.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/longcomment.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/longcomment.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/new_complex.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/new_complex.cool
++ outname=new_complex.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/new_complex.cool
++ errname=new_complex.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/new_complex.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/new_complex.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/new_complex.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/new_complex.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/new_complex.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/new_complex.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/null_in_string.cl.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/null_in_string.cl.cool
++ outname=null_in_string.cl.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/null_in_string.cl.cool
++ errname=null_in_string.cl.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/null_in_string.cl.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/null_in_string.cl.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/null_in_string.cl.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/null_in_string.cl.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/null_in_string.cl.cool.out
++ myrc=1
++ '[' 1 -ne 0 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/null_in_string.cl.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/null_in_string.cl.cool.out.errortokens
+1d0
+< #2 ERROR "String contains null character."
++ exit 1
+FAIL: testsuite/lexer/null_in_string.cl.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/null_in_string_unescaped_newline.cl.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/null_in_string_unescaped_newline.cl.cool
++ outname=null_in_string_unescaped_newline.cl.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/null_in_string_unescaped_newline.cl.cool
++ errname=null_in_string_unescaped_newline.cl.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/null_in_string_unescaped_newline.cl.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/null_in_string_unescaped_newline.cl.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/null_in_string_unescaped_newline.cl.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/null_in_string_unescaped_newline.cl.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/null_in_string_unescaped_newline.cl.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/null_in_string_unescaped_newline.cl.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/null_in_string_unescaped_newline.cl.cool.out.errortokens
+1c1,3
+< #2 ERROR "String contains null character."
+---
+> #2 ERROR "\""
+> #2 ERROR ">"
+> #2 ERROR "\000"
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/null_in_string_unescaped_newline.cl.cool.out.errortokens.filtered /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/null_in_string_unescaped_newline.cl.cool.out.errortokens.filtered
+1c1,3
+<  ERROR "String contains null character."
+---
+>  ERROR "\""
+>  ERROR ">"
+>  ERROR "\000"
+FAIL: testsuite/lexer/null_in_string_unescaped_newline.cl.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/objectid.test.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/objectid.test.cool
++ outname=objectid.test.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/objectid.test.cool
++ errname=objectid.test.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/objectid.test.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/objectid.test.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/objectid.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/objectid.test.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/objectid.test.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/objectid.test.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/objectid.test.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/objectid.test.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/opencomment.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/opencomment.cool
++ outname=opencomment.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/opencomment.cool
++ errname=opencomment.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/opencomment.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/opencomment.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/opencomment.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/opencomment.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/opencomment.cool.out
++ myrc=1
++ '[' 1 -ne 0 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/opencomment.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/opencomment.cool.out.errortokens
+1d0
+< #4 ERROR "EOF in comment"
++ exit 1
+FAIL: testsuite/lexer/opencomment.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/operators.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/operators.cool
++ outname=operators.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/operators.cool
++ errname=operators.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/operators.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/operators.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/operators.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/operators.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/operators.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/operators.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/pathologicalstrings.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/pathologicalstrings.cool
++ outname=pathologicalstrings.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/pathologicalstrings.cool
++ errname=pathologicalstrings.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/pathologicalstrings.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/pathologicalstrings.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/pathologicalstrings.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/pathologicalstrings.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/pathologicalstrings.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/pathologicalstrings.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/pathologicalstrings.cool.out.errortokens
+1,3c1,56
+< #15 ERROR "String constant too long"
+< #41 ERROR "String constant too long"
+< #69 ERROR "String constant too long"
+---
+> #5 ERROR "\""
+> #5 ERROR "\\"
+> #6 ERROR "\\"
+> #7 ERROR "\\"
+> #8 ERROR "\\"
+> #9 ERROR "\\"
+> #10 ERROR "\\"
+> #11 ERROR "\\"
+> #12 ERROR "\\"
+> #13 ERROR "\\"
+> #14 ERROR "\\"
+> #18 ERROR "\\"
+> #19 ERROR "\\"
+> #20 ERROR "\\"
+> #21 ERROR "\\"
+> #22 ERROR "\\"
+> #23 ERROR "\\"
+> #24 ERROR "\\"
+> #25 ERROR "\\"
+> #26 ERROR "\\"
+> #27 ERROR "\\"
+> #28 ERROR "\\"
+> #31 ERROR "\\"
+> #32 ERROR "\\"
+> #33 ERROR "\\"
+> #34 ERROR "\\"
+> #35 ERROR "\\"
+> #36 ERROR "\\"
+> #37 ERROR "\\"
+> #38 ERROR "\\"
+> #39 ERROR "\\"
+> #40 ERROR "\\"
+> #41 ERROR "\\"
+> #44 ERROR "\\"
+> #45 ERROR "\\"
+> #46 ERROR "\\"
+> #47 ERROR "\\"
+> #48 ERROR "\\"
+> #49 ERROR "\\"
+> #50 ERROR "\\"
+> #51 ERROR "\\"
+> #52 ERROR "\\"
+> #53 ERROR "\\"
+> #54 ERROR "\\"
+> #58 ERROR "\\"
+> #59 ERROR "\\"
+> #60 ERROR "\\"
+> #61 ERROR "\\"
+> #62 ERROR "\\"
+> #63 ERROR "\\"
+> #64 ERROR "\\"
+> #65 ERROR "\\"
+> #66 ERROR "\\"
+> #67 ERROR "\\"
+> #68 ERROR "\\"
+> #69 ERROR "\""
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/pathologicalstrings.cool.out.errortokens.filtered /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/pathologicalstrings.cool.out.errortokens.filtered
+1,3c1,56
+<  ERROR "String constant too long"
+<  ERROR "String constant too long"
+<  ERROR "String constant too long"
+---
+>  ERROR "\""
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\""
+FAIL: testsuite/lexer/pathologicalstrings.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/s03.test.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/s03.test.cool
++ outname=s03.test.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/s03.test.cool
++ errname=s03.test.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/s03.test.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/s03.test.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s03.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s03.test.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s03.test.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/s03.test.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/s04.test.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/s04.test.cool
++ outname=s04.test.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/s04.test.cool
++ errname=s04.test.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/s04.test.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/s04.test.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s04.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s04.test.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s04.test.cool.out
++ myrc=0
++ '[' 0 -ne 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s04.test.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s04.test.cool.out.errortokens
+0a1
+> #11 ERROR "\013"
++ exit 1
+FAIL: testsuite/lexer/s04.test.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/s05.test.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/s05.test.cool
++ outname=s05.test.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/s05.test.cool
++ errname=s05.test.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/s05.test.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/s05.test.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s05.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s05.test.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s05.test.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/s05.test.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/s14.test.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/s14.test.cool
++ outname=s14.test.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/s14.test.cool
++ errname=s14.test.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/s14.test.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/s14.test.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s14.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s14.test.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s14.test.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/s14.test.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/s16.test.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/s16.test.cool
++ outname=s16.test.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/s16.test.cool
++ errname=s16.test.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/s16.test.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/s16.test.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s16.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s16.test.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s16.test.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/s16.test.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/s19.test.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/s19.test.cool
++ outname=s19.test.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/s19.test.cool
++ errname=s19.test.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/s19.test.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/s19.test.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s19.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s19.test.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s19.test.cool.out
++ myrc=1
++ '[' 1 -ne 0 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s19.test.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s19.test.cool.out.errortokens
+1,2d0
+< #3 ERROR "Unterminated string constant"
+< #4 ERROR "Unterminated string constant"
++ exit 1
+FAIL: testsuite/lexer/s19.test.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/s25.test.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/s25.test.cool
++ outname=s25.test.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/s25.test.cool
++ errname=s25.test.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/s25.test.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/s25.test.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s25.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s25.test.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s25.test.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/s25.test.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/s26.test.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/s26.test.cool
++ outname=s26.test.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/s26.test.cool
++ errname=s26.test.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/s26.test.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/s26.test.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s26.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s26.test.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s26.test.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/s26.test.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/s31.test.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/s31.test.cool
++ outname=s31.test.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/s31.test.cool
++ errname=s31.test.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/s31.test.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/s31.test.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s31.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s31.test.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s31.test.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s31.test.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s31.test.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/s31.test.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/s32.test.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/s32.test.cool
++ outname=s32.test.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/s32.test.cool
++ errname=s32.test.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/s32.test.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/s32.test.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s32.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s32.test.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s32.test.cool.out
++ myrc=1
++ '[' 1 -ne 0 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s32.test.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s32.test.cool.out.errortokens
+1d0
+< #2 ERROR "Unmatched *)"
++ exit 1
+FAIL: testsuite/lexer/s32.test.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/s34.test.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/s34.test.cool
++ outname=s34.test.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/s34.test.cool
++ errname=s34.test.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/s34.test.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/s34.test.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s34.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s34.test.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s34.test.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s34.test.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s34.test.cool.out.errortokens
+1c1,3
+< #5 ERROR "Unterminated string constant"
+---
+> #3 ERROR "\""
+> #3 ERROR "\\"
+> #4 ERROR "'"
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/s34.test.cool.out.errortokens.filtered /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/s34.test.cool.out.errortokens.filtered
+1c1,3
+<  ERROR "Unterminated string constant"
+---
+>  ERROR "\""
+>  ERROR "\\"
+>  ERROR "'"
+FAIL: testsuite/lexer/s34.test.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/sort_list.cl.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/sort_list.cl.cool
++ outname=sort_list.cl.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/sort_list.cl.cool
++ errname=sort_list.cl.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/sort_list.cl.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/sort_list.cl.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/sort_list.cl.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/sort_list.cl.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/sort_list.cl.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/sort_list.cl.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/stringcomment.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/stringcomment.cool
++ outname=stringcomment.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/stringcomment.cool
++ errname=stringcomment.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/stringcomment.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/stringcomment.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/stringcomment.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/stringcomment.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/stringcomment.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/stringcomment.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/twice_512_nested_comments.cl.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/twice_512_nested_comments.cl.cool
++ outname=twice_512_nested_comments.cl.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/twice_512_nested_comments.cl.cool
++ errname=twice_512_nested_comments.cl.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/twice_512_nested_comments.cl.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/twice_512_nested_comments.cl.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/twice_512_nested_comments.cl.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/twice_512_nested_comments.cl.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/twice_512_nested_comments.cl.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/twice_512_nested_comments.cl.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/validcharacters.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/validcharacters.cool
++ outname=validcharacters.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/validcharacters.cool
++ errname=validcharacters.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/validcharacters.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/validcharacters.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/validcharacters.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/validcharacters.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/validcharacters.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/validcharacters.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/weirdcharcomment.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/weirdcharcomment.cool
++ outname=weirdcharcomment.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/weirdcharcomment.cool
++ errname=weirdcharcomment.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/weirdcharcomment.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/weirdcharcomment.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/weirdcharcomment.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/weirdcharcomment.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/weirdcharcomment.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/weirdcharcomment.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/wq0607-c1.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/wq0607-c1.cool
++ outname=wq0607-c1.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/wq0607-c1.cool
++ errname=wq0607-c1.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/wq0607-c1.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/wq0607-c1.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/wq0607-c1.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/wq0607-c1.cool.out
++ refrc=1
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/wq0607-c1.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/wq0607-c1.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/wq0607-c2.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/wq0607-c2.cool
++ outname=wq0607-c2.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/wq0607-c2.cool
++ errname=wq0607-c2.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/wq0607-c2.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/wq0607-c2.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/wq0607-c2.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/wq0607-c2.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/wq0607-c2.cool.out
++ myrc=1
++ '[' 1 -ne 0 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/wq0607-c2.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/wq0607-c2.cool.out.errortokens
+1d0
+< #3 ERROR "Unmatched *)"
++ exit 1
+FAIL: testsuite/lexer/wq0607-c2.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/wq0607-c3.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/wq0607-c3.cool
++ outname=wq0607-c3.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/wq0607-c3.cool
++ errname=wq0607-c3.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/wq0607-c3.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/wq0607-c3.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/wq0607-c3.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/wq0607-c3.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/wq0607-c3.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/wq0607-c3.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/wq0607-c3.cool.out.errortokens
+7c7
+< #4 ERROR "Unterminated string constant"
+---
+> #3 ERROR "\""
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/wq0607-c3.cool.out.errortokens.filtered /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/wq0607-c3.cool.out.errortokens.filtered
+7c7
+<  ERROR "Unterminated string constant"
+---
+>  ERROR "\""
+FAIL: testsuite/lexer/wq0607-c3.cool
++ testfile=/home/raj/cool/distro/testsuite/lexer/wq0607-c4.cool
++ results_outdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/out
++ results_refdir=/home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/home/raj/cool/distro/assignments/pa1
++ REF_DIR=/home/raj/cool/distro/../ref
++ component=lexer
+++ basename /home/raj/cool/distro/testsuite/lexer/wq0607-c4.cool
++ outname=wq0607-c4.cool.out
+++ basename /home/raj/cool/distro/testsuite/lexer/wq0607-c4.cool
++ errname=wq0607-c4.cool.err
++ lexer /home/raj/cool/distro/testsuite/lexer/wq0607-c4.cool
++ refrc=0
++ ./myfrontend -x /home/raj/cool/distro/testsuite/lexer/wq0607-c4.cool
++ myrc=0
++ grep exception /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/wq0607-c4.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/wq0607-c4.cool.out
++ refrc=0
++ grep ERROR /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/wq0607-c4.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/wq0607-c4.cool.out.errortokens /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/wq0607-c4.cool.out.errortokens
+0a1,7
+> #3 ERROR "\""
+> #3 ERROR "\\"
+> #3 ERROR "\\"
+> #3 ERROR "\\"
+> #3 ERROR "\\"
+> #3 ERROR "\\"
+> #3 ERROR "\\"
+11c18,19
+< #6 ERROR "Unterminated string constant"
+---
+> #6 ERROR "\\"
+> #6 ERROR "\\"
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /home/raj/cool/distro/assignments/pa1/testsuite/lexer/ref/wq0607-c4.cool.out.errortokens.filtered /home/raj/cool/distro/assignments/pa1/testsuite/lexer/out/wq0607-c4.cool.out.errortokens.filtered
+0a1,9
+>  ERROR "\""
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+11d19
+<  ERROR "Unterminated string constant"
+FAIL: testsuite/lexer/wq0607-c4.cool
