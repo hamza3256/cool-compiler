@@ -1,5 +1,5 @@
 # cool-compiler
-This is a simple compiler for the Cool programming language (classroom object-oriented language).
+This is a simple compiler for the Cool programming language (Classroom Object Oriented Language).
 
 
 PA1: a small program written in COOL to handle arith operations, stack machine.
